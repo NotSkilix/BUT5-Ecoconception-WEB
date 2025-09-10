@@ -1,0 +1,86 @@
+{
+  "tools":
+  [
+    {
+      "name": "Tool A",
+      "url": "https://www.toola.com",
+      "free": true,
+      "usage": 5,
+      "precision": 5,
+      "criterias":
+        [
+          "Ease of Use",
+          "Customer Support",
+          "Features"
+        ],
+      "exportable": true,
+      "documentation": true,
+      "integration": true,
+      "strongPoints":
+        [
+          "User-friendly interface",
+          "Comprehensive documentation"
+        ],
+      "weakPoints":
+        [
+          "Limited integrations",
+          "Basic features in free version"
+        ],
+      "note": 4.5
+    },
+    {
+        "name": "Tool B",
+        "url": "https://www.toolb.com",
+        "free": false,
+        "usage": 4,
+        "precision": 4,
+        "criterias":
+            [
+            "Performance",
+            "Scalability",
+            "Security"
+            ],
+        "exportable": false,
+        "documentation": true,
+        "integration": false,
+        "strongPoints":
+            [
+            "High performance",
+            "Robust security features"
+            ],
+        "weakPoints":
+            [
+            "Steep learning curve",
+            "Expensive pricing"
+            ],
+        "note": 4.0
+    },
+    {
+        "name": "Tool C",
+        "url": "https://www.toolc.com",
+        "free": true,
+        "usage": 3,
+        "precision": 4,
+        "criterias":
+            [
+            "Affordability",
+            "Community Support",
+            "Customization"
+            ],
+        "exportable": true,
+        "documentation": false,
+        "integration": true,
+        "strongPoints":
+            [
+            "Affordable pricing",
+            "Highly customizable"
+            ],
+        "weakPoints":
+            [
+            "Limited documentation",
+            "Smaller user community"
+            ],
+        "note": 3.5
+    }
+  ]
+}
