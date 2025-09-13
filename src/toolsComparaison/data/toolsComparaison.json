@@ -1,4 +1,9 @@
 {
+  "labels": [
+    "usage",
+    "precision",
+    "note"
+  ],
   "tools":
   [
     {

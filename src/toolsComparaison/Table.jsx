@@ -1,16 +1,8 @@
 import React from "react";
 
 import "../App.css";
-import toolsComparison from ".//data/toolsComparaison.json";
 
-const Table = () => {
-    const [tools, setTools] = React.useState({});
-
-    React.useEffect(() => {
-        setTools(toolsComparison.tools);
-        console.log(tools);
-    }, [tools]);
-
+const Table = (props) => {
     const getRatingColor = (note) => {
         if (note >= 8.5) return "text-green-700 font-semibold";
         if (note >= 7) return "text-lime-700 font-semibold";
@@ -25,14 +17,7 @@ const Table = () => {
 
     return (
         <>
-            <div className="text-center mb-8">
-                <h2 className="text-4xl font-bold text-green-900 mb-4 bg-gradient-to-r from-green-600 to-lime-500 bg-clip-text text-transparent">
-                    🌱 Tableau de Comparaison Écologique
-                </h2>
-                <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-lime-400 mx-auto rounded-full"></div>
-            </div>
-
-            {tools.length > 0 ? (
+            {props.tools.length > 0 ? (
                 <div className="overflow-x-auto">
                     <table className="w-full rounded-xl overflow-hidden shadow-lg border border-green-200">
                         <thead>
@@ -79,7 +64,7 @@ const Table = () => {
                         </tr>
                         </thead>
                         <tbody className="divide-y divide-green-200 bg-white">
-                        {tools.map((tool) => (
+                        {props.tools.map((tool) => (
                             <tr key={tool.name} className="hover:bg-green-50 transition">
                                 <td className="px-6 py-4 font-semibold text-green-900 sticky left-0 bg-inherit z-10 shadow-lg">
                                     <div className="flex items-center">
@@ -232,5 +217,9 @@ const Table = () => {
         </>
     );
 };
+
+Table.propTypes = {
+    tools: Object
+}
 
 export default Table;
