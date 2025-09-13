@@ -1,10 +1,10 @@
-import Table from "./TP01/Table.jsx"
+import ToolsComparaisonPage from "./toolsComparaison/toolsComparaisonPage.jsx"
 import './App.css'
 
 function App() {
   return (
     <div>
-        <Table />
+        <ToolsComparaisonPage />
     </div>
   )
 }
