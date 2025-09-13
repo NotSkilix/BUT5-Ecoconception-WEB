@@ -1,4 +1,4 @@
-import ToolsComparaisonPage from "./toolsComparaison/toolsComparaisonPage.jsx"
+import ToolsComparaisonPage from "./toolsComparaison/ToolsComparaisonPage.jsx"
 import './App.css'
 
 function App() {

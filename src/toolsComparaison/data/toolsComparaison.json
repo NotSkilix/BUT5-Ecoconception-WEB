@@ -35,7 +35,7 @@
           "dépend du modèle",
           "Type d'appareils pas pris en compte"
         ],
-      "note": 4,
+      "note": 3.5,
       "noteWebsite": "F"
     },
     {
@@ -107,7 +107,7 @@
       "url": "https://developer.chrome.com/docs/lighthouse",
       "free": true,
       "usage": 5,
-      "precision": 3,
+      "precision": 4,
       "criterias":
       [
         "Consommation éléctrique serveur",

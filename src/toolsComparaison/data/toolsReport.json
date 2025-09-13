@@ -1,0 +1,30 @@
+{
+  "introduction": "Quatre outils principaux ont été étudiés pour mesurer l’impact environnemental des sites web : Website Carbon Calculator, Eco Index, Scaphandre et LightHouse. Ces outils ont été évalués en termes d’usage, de précision, de critères mesurés et d’aptitude à fournir des résultats exploitables.",
+  "tools": [
+    {
+      "name": "Website Carbon Calculator",
+      "description": "Website Carbon Calculator est rapide et facile à utiliser, offrant un aperçu immédiat de l’empreinte carbone d’une page web grâce à l’analyse du poids de la page, du temps de chargement et de l’estimation du CO2 émis. Il permet également de sensibiliser les utilisateurs via un badge de certification et la possibilité de partager les résultats. Cependant, il ne fournit qu’une estimation approximative, ne prend pas en compte tous les paramètres possibles et ne différencie pas les types d’appareils utilisés.",
+      "score": 3.5,
+      "siteScore": "F"
+    },
+    {
+      "name": "Eco Index",
+      "description": "Eco Index se distingue par son accessibilité et ses nombreuses options d’intégration, notamment via les extensions pour navigateurs et la ligne de commande. Il analyse la taille, la complexité et le nombre de requêtes d’une page web, et propose des suggestions pour améliorer l’impact environnemental. L’outil permet également de générer un badge de certification et dispose d’une API pour exporter les résultats. Cependant, sa précision reste limitée, certains paramètres ne sont pas pris en compte et la version gratuite est restreinte à dix analyses par jour.",
+      "score": 3.5,
+      "siteScore": "E"
+    },
+    {
+      "name": "Scaphandre",
+      "description": "Scaphandre, bien qu’open source et potentiellement très précis, n’a pas pu être testé sur les machines utilisées. Il est conçu pour des audits internes et le monitoring des serveurs, prenant en compte la consommation électrique, l’utilisation matérielle et la puissance CPU et RAM. Lorsqu’il est correctement installé, il fournit des mesures très détaillées et exportables, mais sa mise en place reste complexe et sa documentation n’est pas toujours suffisante pour un démarrage facile",
+      "score": null,
+      "siteScore": null
+    },
+    {
+      "name": "LightHouse",
+      "description": "LightHouse se montre extrêmement polyvalent et peut être intégré dans de nombreux contextes, y compris les processus CI/CD. Il fournit des recommandations complètes sur les performances, l’accessibilité et les bonnes pratiques de développement, et ses résultats peuvent être exportés dans différents formats. L’outil mesure la consommation électrique du serveur, l’usage matériel et la charge CPU/RAM, mais il ne couvre pas directement l’empreinte environnementale globale et ne prend pas en compte les différences d’appareils de manière fine.",
+      "score": 3,
+      "siteScore": "Entre E et F"
+    }
+  ],
+  "conclusion": "En conclusion, le choix de l’outil dépend des besoins spécifiques. Website Carbon Calculator et Eco Index sont particulièrement adaptés pour une sensibilisation rapide et facile, tandis que Scaphandre est plus approprié pour un audit technique précis et interne. LightHouse, de son côté, se distingue par sa polyvalence et son intégration dans les processus de développement, même si ses évaluations environnementales restent indirectes. Le choix final doit donc être guidé par l’objectif recherché, qu’il s’agisse de sensibilisation, d’optimisation continue ou d’audit technique détaillé. Dans notre cas nous cherchons l'impact environnemental global d'un site web, nous privilégierons Eco Index pour sa facilité d'utilisation et ses fonctionnalités adaptées à cet objectif."
+}
