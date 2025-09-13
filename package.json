@@ -1,6 +1,7 @@
 {
   "name": "but5-ecoconception-web",
-  "private": true,
+  "private": false,
+  "homepage": "https://NotSkilix.github.io/BUT5-Ecoconception-WEB/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
