@@ -1,0 +1,140 @@
+{
+  "labels": [
+    "usage",
+    "precision",
+    "note"
+  ],
+  "tools":
+  [
+    {
+      "name": "Website Carbon Calculator",
+      "url": "https://www.websitecarbon.com",
+      "free": true,
+      "usage": 4,
+      "precision": 4,
+      "criterias":
+        [
+          "Poids de la page",
+          "Temps de chargement",
+          "Estimation du CO2"
+        ],
+      "exportable": false,
+      "documentation": true,
+      "integration": true,
+      "strongPoints":
+        [
+          "Rapide pour avoir un aperçu",
+          "Bon pour sensibiliser",
+          "Badge de certification",
+          "Propose de partager le résultat"
+        ],
+      "weakPoints":
+        [
+          "Uniquement une estimation",
+          "N'utilise pas tout les paramètres possibles",
+          "dépend du modèle",
+          "Type d'appareils pas pris en compte"
+        ],
+      "note": 3.5,
+      "noteWebsite": "F"
+    },
+    {
+      "name": "Eco Index",
+      "url": "https://www.ecoindex.fr",
+      "free": true,
+      "usage": 5,
+      "precision": 3.5,
+      "criterias":
+          [
+          "Taille",
+          "Complexité",
+          "Requêtes"
+          ],
+      "exportable": false,
+      "documentation": true,
+      "integration": true,
+      "strongPoints":
+          [
+            "Badge de certification",
+            "Aide a améliorer la page",
+            "Propose de partager le résultat",
+            "Extension Chrome, Firefox et ligne de commande",
+            "Sensibilisation de l'impact du numérique",
+            "A une API pour 'exporter' des résultats"
+          ],
+      "weakPoints":
+          [
+            "Manque beaucoup de paramètres (WiFi, appareils...)",
+            "Seulement 3 critères",
+            "Ne couvre pas l'empreinte totale",
+            "Gratuit uniquement pour 10 analyses par jour"
+          ],
+      "note": 3.5,
+      "noteWebsite": "E"
+    },
+    {
+      "name": "Scaphandre",
+      "url": "https://hubblo-org.github.io/scaphandre-documentation/",
+      "free": true,
+      "usage": 0,
+      "precision": -1,
+      "criterias":
+          [
+            "Consommation éléctrique serveur",
+            "Consommation matériel",
+            "Puissance utilisée",
+            "Usage CPU/RAM"
+          ],
+      "strongPoints":
+          [
+            "Open Source",
+            "Bon pour les 'audits internes'",
+            "Monitoring des serveurs",
+            "Exportable facilement",
+            "Outils très précis si on arrive à le mettre en place"
+          ],
+      "weakPoints":
+          [
+            "Je n'ai pas pu le lancer sur mes deux machines",
+            "Complexe à mettre en place",
+            "Ne fonctionne pas directement avec la documentation"
+          ],
+      "note": -1,
+      "noteWebsite": "Pas pû tester"
+    },
+    {
+      "name": "LightHouse",
+      "url": "https://developer.chrome.com/docs/lighthouse",
+      "free": true,
+      "usage": 5,
+      "precision": 4,
+      "criterias":
+      [
+        "Consommation éléctrique serveur",
+        "Consommation matériel",
+        "Puissance utilisée",
+        "Usage CPU/RAM"
+      ],
+      "exportable": true,
+      "documentation": true,
+      "integration": true,
+      "strongPoints":
+      [
+        "Utilisable dans beaucoup de contextes différents",
+        "Open Source",
+        "Donne toutes les pistes à améliorer (bonnes pratiques, performances, accessibilité...)",
+        "Exportable en JSON et autre formats",
+        "Excellente documentation",
+        "Utilisable en CI/CD"
+      ],
+      "weakPoints":
+      [
+        "Couvre pas les aspects environnementaux directement",
+        "Ne prends pas en compte l'infrastructure",
+        "Ne prends pas en compte les différences d'appareils (sauf téléphone et pc mais trop générique)"
+      ],
+      "note": 3,
+      "noteWebsite": "Environs E-F"
+    }
+  ]
+}
