@@ -23,7 +23,9 @@ const RadarChart = ({ tools }) => {
 
     const data = {
         labels: labels,
-        datasets: tools.tools.map(tool => ({
+        datasets: tools.tools
+            .filter(tool => tool.name!=="Scaphandre")
+            .map(tool => ({
             label: tool.name,
             data: labels.map(label => tool[label]),
             backgroundColor: `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(

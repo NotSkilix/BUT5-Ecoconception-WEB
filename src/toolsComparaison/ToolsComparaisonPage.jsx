@@ -59,6 +59,14 @@ const ToolsComparaisonPage = () => {
                         <p className="text-gray-600 mb-4">
                             Ce graphique radar met en évidence les performances clés de chaque outil sur différents critères (précision, facilité d'usage et sa note).
                         </p>
+                        <div className="bg-orange-50 border-orange-400 border-l-4 mb-4 space-y-2">
+                            <h4 className="text-lg font-semibold text-orange-800 px-4 py-3">
+                                Note sur le graphique
+                            </h4>
+                            <p className="text-gray-600 italic px-4 pb-3">
+                                L'outil 'Scaphandre' ne figure pas dans ce graphique car je n'ai pas pu le tester
+                            </p>
+                        </div>
                         <div className="bg-white p-6 rounded-xl shadow-lg border border-green-200">
                             <RadarChart tools={tools} />
                         </div>
