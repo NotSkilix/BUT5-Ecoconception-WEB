@@ -1,5 +1,5 @@
 import React from "react";
-import TextSection from "./TextSection.jsx";
+import TextSection from "../shared/TextSection.jsx";
 
 const ToolsReport = ({ report }) => {
     return (

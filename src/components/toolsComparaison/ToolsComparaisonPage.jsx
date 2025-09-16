@@ -1,8 +1,8 @@
 import React from "react";
 import Table from "./Table.jsx";
 import RadarChart from "./RadarChart.jsx";
-import toolsComparison from "./data/toolsComparaison.json";
-import toolsReportData from "./data/toolsReport.json";
+import toolsComparison from "../../data/toolsComparaison.json";
+import toolsReportData from "../../data/toolsReport.json";
 import ToolsReport from "./ToolsReport.jsx";
 
 const ToolsComparaisonPage = () => {
