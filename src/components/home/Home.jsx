@@ -1,16 +1,21 @@
 import Navbar from "../shared/Navbar.jsx";
+import TextSection from "../shared/TextSection.jsx";
+import text from "../../data/home/homeText.json"
 
 const Home = () => {
     return (
-        <div>
+        <div >
             <Navbar />
-            <div className="px-4 py-8">
-                <h1 className="text-4xl font-bold text-green-900 text-center mb-4"> Bienvenue ! </h1>
-                <h2 className="text-3xl text-center mb-4">Voici le compte rendu du premier TP d'écoconception Web </h2>
-            </div>
-            <div>
-                <h2>Le but de ce cours est de sensibiliser sur <span className="font-bold">l'écoconception web</span></h2>
-                <p></p>
+            <div className="max-w-7xl mx-auto px-4 py-8 text-center">
+                <div className="px-4 py-20">
+                    <h1> Bienvenue ! </h1>
+                    <h2 className="text-black font-normal">Voici le compte rendu du premier TP d'écoconception Web </h2>
+                </div>
+                <div>
+                    <div>
+                        <TextSection content={text.introduction.content} title={text.introduction.title} subtitle={text.introduction.subtitle} />
+                    </div>
+                </div>
             </div>
         </div>
     )

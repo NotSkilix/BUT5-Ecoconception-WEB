@@ -1,8 +1,8 @@
 import React from "react";
 import Table from "./Table.jsx";
 import RadarChart from "./RadarChart.jsx";
-import toolsComparison from "../../data/toolsComparaison.json";
-import toolsReportData from "../../data/toolsReport.json";
+import toolsComparison from "../../data/toolsComparaison/toolsComparaison.json";
+import toolsReportData from "../../data/toolsComparaison/toolsReport.json";
 import ToolsReport from "./ToolsReport.jsx";
 import Navbar from "../shared/Navbar.jsx";
 
@@ -17,7 +17,7 @@ const ToolsComparaisonPage = () => {
     return (
         <div>
             <Navbar />
-            <div className="max-w-7xl mx-auto px-4 py-8">
+            <div className="max-w-7xl mx-auto px-4 py-8 text-center">
                 {/* Main page heading */}
                 <h1 className="text-4xl font-bold text-green-900 text-center mb-4">
                     🌱 Comparaison des Outils Écologiques
@@ -75,7 +75,7 @@ const ToolsComparaisonPage = () => {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-2xl font-semibold text-green-800 mb-4">
+                            <h2>
                                 📝 Synthèse écrite
                             </h2>
                             <div className="bg-white p-6 rounded-xl shadow-lg border border-green-200">

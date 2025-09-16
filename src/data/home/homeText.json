@@ -1,0 +1,8 @@
+{
+  "introduction" :
+    {
+      "title" : "Introduction",
+      "subtitle":  null,
+      "content": "Ce projet a été réalisé lors de ma dernière année de mon bachelor en informatique parcours développeur full-stack (BUT DFS) à l'IUT de La Rochelle (Institut Universitaire de Technologie). Ce site web développé en React Vite fait office de rendue pour la matière \"écoconception web\" et en particulier pour le TP1 de la matière. Cette matière a pour but de nous sensibiliser sur l'impact écologique qu'a le numérique, et en particulier les sites web. Cette matière est présenté par un intervenant <a target=\"_blank\" href=\"https://www.linkedin.com/in/vincent-courboulay-7a819732\">Vincent Courboulay</a>"
+    }
+}
