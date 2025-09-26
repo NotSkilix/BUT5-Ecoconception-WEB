@@ -1,5 +1,5 @@
 {
-  "introduction": "Quatre outils principaux ont été étudiés pour mesurer l’impact environnemental des sites web : Website Carbon Calculator, Eco Index, Scaphandre et LightHouse. Ces outils ont été évalués en termes d’usage, de précision, de critères mesurés et d’aptitude à fournir des résultats exploitables.",
+  "introduction": "Quatre outils principaux ont été étudiés pour mesurer l’impact environnemental des sites web : Website Carbon Calculator, Eco Index, Scaphandre et LightHouse. Ces outils ont été évalués en termes d’usage, de précision, de critères mesurés et d’aptitude à fournir des résultats exploitables.<br/>Le site utilisé pour réaliser les tests est celui de la mairie de la ville dans laquelle j'ai vécu: <br/> <a href=\"https://www.mairie-braud.fr/\">Mairie de Braud et Saint Louis</a>",
   "tools": [
     {
       "name": "Website Carbon Calculator",
