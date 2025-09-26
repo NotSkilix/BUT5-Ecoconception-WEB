@@ -1,6 +1,6 @@
 import Navbar from "../shared/Navbar.jsx";
-import TextSection from "../shared/TextSection.jsx";
 import text from "../../data/home/homeText.json"
+import HomeText from "./HomeText.jsx";
 
 const Home = () => {
     return (
@@ -12,9 +12,7 @@ const Home = () => {
                     <h2 className="text-black font-normal">Voici le compte rendu du premier TP d'écoconception Web </h2>
                 </div>
                 <div>
-                    <div>
-                        <TextSection content={text.introduction.content} title={text.introduction.title} subtitle={text.introduction.subtitle} />
-                    </div>
+                    <HomeText texts={text}/>
                 </div>
             </div>
         </div>
