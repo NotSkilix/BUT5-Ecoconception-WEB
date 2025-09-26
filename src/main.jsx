@@ -4,6 +4,7 @@ import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Home from "./components/home/Home.jsx";
 import ToolsComparaisonPage from "./components/toolsComparaison/ToolsComparaisonPage.jsx";
+import DecryptionPage from "./components/decryption/DecryptionPage.jsx";
 
 const BASE_URL = import.meta.env.BASE_URL;
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     {
         path: `${BASE_URL}comparaison-outils`,
         element: <ToolsComparaisonPage />,
+    },
+    {
+        path: `${BASE_URL}decryptage`,
+        element: <DecryptionPage />
     }
 ]);
 

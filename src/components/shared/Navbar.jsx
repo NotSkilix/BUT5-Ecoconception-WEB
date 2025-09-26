@@ -24,6 +24,9 @@ const Navbar = () => {
                     <Link to={BASE_URL+"comparaison-outils"} className={getStyle("/comparaison-outils")}>
                         Comparaison des outils
                     </Link>
+                    <Link to={BASE_URL+"decryptage"} className={getStyle("/decryptage")}>
+                        Décryptage
+                    </Link>
                 </div>
             </nav>
         </div>
