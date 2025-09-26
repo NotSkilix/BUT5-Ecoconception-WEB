@@ -1,0 +1,10 @@
+{
+  "brief": {
+    "title" : "Présentation de l'outil",
+    "content" : "Website Carbon Calculator est un outil en ligne gratuit qui a pour objectif d’évaluer l’empreinte carbone générée par le chargement d’une page web. Il a été créé par l’organisation britannique Wholegrain Digital, une agence spécialisée dans le design web durable. Son public cible est large : aussi bien les développeurs et concepteurs web qui souhaitent améliorer la performance environnementale de leurs sites, que les responsables de communication ou tout utilisateur curieux de connaître l’impact de la navigation numérique."
+  },
+  "oneSentence": {
+    "title" : "Son utilité en une phrase",
+    "content" : "L’outil est particulièrement utile car il traduit des données techniques (poids de la page, temps de chargement, consommation énergétique estimée) en une estimation de CO₂ émis par visite, ce qui permet de sensibiliser et d’orienter les choix de conception vers des sites plus sobres et respectueux de l’environnement."
+  }
+}
