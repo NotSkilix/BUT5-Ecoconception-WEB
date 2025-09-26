@@ -9,8 +9,9 @@ const ToolsReport = ({ report }) => {
 
             </p>
 
-            {report.tools.map((tool) => (
+            {report.tools.map((tool, key) => (
                 <TextSection
+                    key={key}
                     title={tool.name}
                     content={[
                         tool.description,
