@@ -5,13 +5,14 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Home from "./components/home/Home.jsx";
 import ToolsComparaisonPage from "./components/toolsComparaison/ToolsComparaisonPage.jsx";
 
+const BASE_URL = import.meta.env.BASE_URL;
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: BASE_URL,
         element: <Home />,
     },
     {
-        path: "/comparaison-outils",
+        path: `${BASE_URL}comparaison-outils`,
         element: <ToolsComparaisonPage />,
     }
 ]);
