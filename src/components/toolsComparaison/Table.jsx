@@ -113,8 +113,8 @@ const Table = (props) => {
                                     </span>
                                 </td>
                                 <td className="px-2 py-4 text-green-900 text-sm">
-                                    {tool.criterias.map((criteria) => (
-                                        <span>{criteria}<br/></span>
+                                    {tool.criterias.map((criteria, key) => (
+                                        <span key={key}>{criteria}<br/></span>
                                         )
                                     )}
                                 </td>
