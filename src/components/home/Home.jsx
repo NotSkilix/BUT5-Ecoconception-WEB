@@ -1,8 +1,11 @@
 import Navbar from "../shared/Navbar.jsx";
 import text from "../../data/home/homeText.json"
 import HomeText from "./HomeText.jsx";
+import usePageTitle from "../../hooks/usePageTitle.js";
 
 const Home = () => {
+    usePageTitle("Accueil");
+
     return (
         <div >
             <Navbar />

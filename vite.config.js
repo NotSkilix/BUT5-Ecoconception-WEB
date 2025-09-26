@@ -8,5 +8,5 @@ export default defineConfig({
       react(),
       tailwindcss(),
   ],
-    base: "BUT5-Ecoconception-WEB/"
+    base: "/BUT5-Ecoconception-WEB/"
 })
