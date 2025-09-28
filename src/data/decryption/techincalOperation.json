@@ -44,8 +44,47 @@
   },
   "b": {
     "title" : "Comment l'outil calcule-t-il l'empreinte carbone?",
+    "subtitle" : "L’empreinte carbone d’une page web est calculée à partir de la quantité de données transférées lorsqu’elle est chargée. Plus la page est lourde (images, vidéos, scripts), plus le transfert de données est important et plus l’énergie consommée augmente. <br/>Ce dernier suit quatre étapes:",
     "data" : [
-      ""
+      {
+        "title" : "1/ Mesure du poids de la page",
+        "content" : "L’outil détermine la taille totale des données nécessaires pour afficher la page (en kilo-octets ou méga-octets). Le <a href='https://sustainablewebdesign.org/estimating-digital-emissions/' target='_blank'>modèle Sustainable Web Design</a> utilise le volume de données transférées comme entrée clé, car il s’agit d’un indicateur accessible et cohérent dans le temps."
+      },
+      {
+        "title" : "2/ Conversion en énergie consommée",
+        "content" : "Ce poids est transformé en une estimation de la consommation électrique, en considérant trois postes principaux : <br/>• L’électricité utilisée par les centres de données (data centers) pour stocker et servir les informations.<br/>• L’énergie dépensée dans le réseau pour transporter les données.<br/>• La consommation électrique moyenne d’un appareil utilisateur qui reçoit et traite les données.<br/>Selon les recherches citées (<a href='https://www.iea.org/' target='_blank'>IEA</a>, Andrae, Malmodin), la répartition énergétique est en moyenne : 22% pour les data centers, 24% pour les réseaux et 54% pour les appareils utilisateurs."
+      },
+      {
+        "title" : "3/ Application du facteur carbone",
+        "content" : "L’électricité consommée est convertie en émissions de CO₂ à l’aide d’une intensité carbone moyenne mondiale de l’électricité (environ 494 gCO₂/kWh, selon les données d’<a href='https://ember-climate.org/' target='_blank'>Ember</a>). Ce facteur peut être ajusté si des données locales ou régionales plus précises sont disponibles."
+      },
+      {
+        "title" : "4/ Distinction entre émissions opérationnelles et incorporées",
+        "content" : "Le modèle distingue :<br/>• Les émissions opérationnelles, liées à l’usage courant des infrastructures.<br/>• Les émissions incorporées, liées à la fabrication et au cycle de vie du matériel (serveurs, routeurs, appareils). Par exemple, pour les appareils utilisateurs, les émissions sont quasiment partagées à parts égales entre l’usage (49%) et la fabrication (51%)."
+      },
+      {
+        "title" : "5/ Ajustement en fonction de l’hébergement et du cache",
+        "content" : "Si le site est hébergé par un fournisseur utilisant des énergies renouvelables (via la <a href='https://www.thegreenwebfoundation.org/' target='_blank'>Green Web Foundation</a>), les émissions attribuées aux data centers sont réduites. De plus, le modèle prend en compte les visiteurs récurrents : une partie des données peut être chargée depuis le cache local, ce qui réduit l’impact carbone."
+      },
+      {
+        "title" : "6/ Résultat final",
+        "content" : "Le résultat est présenté sous forme de grammes de CO₂ par visite. L’outil (<a href='https://www.websitecarbon.com/how-does-it-work/' target='_blank'>Website Carbon Calculator</a>) propose aussi une projection annuelle si l’on renseigne le nombre moyen de visites par mois, ainsi qu’une comparaison avec la moyenne des sites testés.",
+        "images": [
+          "decryption/conclusion1.png",
+          "decryption/conclusion2.png",
+          "decryption/conclusion3.png",
+          "decryption/conclusion4.png"
+        ]
+      }
+    ]
+  },
+  "c" : {
+    "title" : "D’où proviennent les données utilisées",
+    "data" : [
+      {
+        "title" : "Sources techniques et scientifiques",
+        "content" : "Les données techniques (comme le poids de la page ou le volume de données transférées) proviennent directement de l’analyse effectuée par <a href='https://www.websitecarbon.com/how-does-it-work/' target='_blank'>Website Carbon Calculator</a> lorsqu’il charge l’URL testée. Pour estimer la consommation énergétique et les émissions de CO₂, l’outil s’appuie sur le <a href='https://sustainablewebdesign.org/estimating-digital-emissions/' target='_blank'>modèle Sustainable Web Design (version 4)</a>, qui compile des recherches de l’<a href='https://www.iea.org/' target='_blank'>Agence Internationale de l’Énergie (IEA)</a> ainsi que des études de référence (Andrae, Malmodin) sur l’impact énergétique du numérique. Les facteurs d’intensité carbone sont issus des rapports d’<a href='https://ember-climate.org/' target='_blank'>Ember</a>, qui mesurent les émissions de CO₂ par kWh d’électricité dans le monde. Enfin, les informations sur les hébergeurs « verts » proviennent de la <a href='https://www.thegreenwebfoundation.org/' target='_blank'>Green Web Foundation</a>."
+      }
     ]
   }
 }

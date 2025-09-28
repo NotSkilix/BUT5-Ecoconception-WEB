@@ -3,11 +3,12 @@ import ImageGallery from "./ImageGallery.jsx";
 
 const TextSection = ({ title, subtitle, content, images, titleSize="h3" }) => {
     const TITLE_TAG = titleSize;
+    const SUBTITLE_TAG = "h"+(parseInt(titleSize.substring(1))+1) // Make subtitle smaller by 1
 
     return (
         <div className="mb-8">
-            {title && <TITLE_TAG>{title}</TITLE_TAG>}
-            {subtitle && <h4>{subtitle}</h4>}
+            {title && <TITLE_TAG dangerouslySetInnerHTML={{ __html: title }}/>}
+            {subtitle && <SUBTITLE_TAG dangerouslySetInnerHTML={{ __html: subtitle }}/>}
 
             {Array.isArray(content)
                 ?
