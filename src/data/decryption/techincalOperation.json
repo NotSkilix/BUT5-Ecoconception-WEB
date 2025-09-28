@@ -1,0 +1,51 @@
+{
+  "a" : {
+    "title" : "Quels données l'outil analyse-t-il?",
+    "datas" : [
+      {
+        "title" : "Le volume de données transférées (poids de la page en Ko/Mo)",
+        "content" : "C’est la donnée principale : l’outil mesure combien de données doivent être envoyées du serveur vers l’utilisateur lors du chargement de la page."
+      },
+      {
+        "title" : "La consommation énergétique associée au transfert",
+        "content" : "Le poids de la page est converti en une estimation d’électricité consommée pour le transfert des données dans le réseau.",
+        "images" : [
+          "decryption/energy1.png",
+          "decryption/energy2.png"
+        ]
+      },
+      {
+        "title" : "La consommation énergétique côté utilisateur (appareil)",
+        "content" : "L’outil applique une valeur moyenne mondiale de consommation énergétique par octet traité sur un appareil utilisateur (ordinateur, téléphone). Attention : ce n’est pas spécifique à chaque type d’appareil, mais une valeur moyenne générique."
+      },
+      {
+        "title" : "La consommation énergétique côté serveur",
+        "content" : "Le modèle inclut une estimation de l’électricité consommée par les serveurs qui hébergent le site."
+      },
+      {
+        "title" : "L’intensité carbone de l’électricité",
+        "content" : "Conversion de l’énergie consommée en émissions de CO₂, en utilisant un facteur mondial moyen d’intensité carbone de la production électrique."
+      },
+      {
+        "title" : "L’hébergement “vert” ou non (via Green Web Foundation)",
+        "content" : "Si le site est hébergé chez un fournisseur utilisant des énergies renouvelables recensé par la Green Web Foundation, le calcul ajuste les émissions attribuées à l’hébergement.",
+        "images" : [
+          "decryption/sustainableEnergy1.png",
+          "decryption/sustainableEnergy2.png"
+        ]
+      },
+      {
+        "title" : "Schéma de conclusion",
+        "images": [
+          "decryption/recapFirstPart.png"
+        ]
+      }
+    ]
+  },
+  "b": {
+    "title" : "Comment l'outil calcule-t-il l'empreinte carbone?",
+    "data" : [
+      ""
+    ]
+  }
+}
