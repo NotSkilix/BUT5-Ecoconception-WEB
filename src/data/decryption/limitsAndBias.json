@@ -1,0 +1,22 @@
+{
+  "limits": {
+    "title": "Limites et biais de Website Carbon Calculator",
+    "data": [
+      {
+        "title": "Quelles sont les limites de cet outil ?",
+        "content": "Website Carbon Calculator est un outil de sensibilisation avant tout, et non un instrument de mesure scientifique de précision. Ses principales limites sont :<br/><ul><li>Il repose sur un modèle théorique (<a href='https://sustainablewebdesign.org' target='_blank'>Sustainable Web Design</a>) et non sur des mesures directes de la consommation réelle d’énergie.</li><li>Les résultats sont des estimations simplifiées, qui varient en fonction de moyennes globales (poids moyen des données, intensité carbone mondiale, etc.).</li><li>Il ne prend pas en compte les différences liées à la localisation des visiteurs (par exemple un site chargé en France ou en Pologne n’aura pas la même empreinte carbone selon le <a href='https://app.electricitymaps.com/map' target='_blank'>mix électrique local</a>).</li><li>L’outil analyse une seule page à la fois, et pas l’ensemble d’un site web ou les comportements utilisateurs (parcours, temps passé, pages consultées successivement).</li></ul>",
+        "images": [
+          "decryption/limitsAndBias/localVariation.webp"
+        ]
+      },
+      {
+        "title": "Quels éléments ne sont pas pris en compte dans le calcul ?",
+        "content": "Certains paramètres importants ne sont pas inclus ou sont fortement simplifiés :<br/><ul><li>La variabilité de l’intensité carbone selon les pays ou les fournisseurs d’électricité (voir <a href='https://www.thegreenwebfoundation.org/green-web-check/' target='_blank'>The Green Web Foundation</a>).</li><li>Les performances techniques côté serveur (par exemple le langage utilisé, la configuration matérielle ou les optimisations logicielles).</li><li>L’impact des réseaux mobiles (4G/5G), souvent plus énergivores que le Wi-Fi, qui peut changer considérablement l’empreinte d’une visite (<a href='https://www.iea.org/reports/data-centres-and-data-transmission-networks' target='_blank'>source IEA</a>).</li><li>Les comportements réels des utilisateurs : nombre de pages vues, durée des sessions, fréquence de retour.</li><li>Les aspects liés à l’accessibilité, à la conception graphique ou aux choix d’interface qui peuvent aussi influencer la consommation d’énergie indirectement.</li></ul>"
+      },
+      {
+        "title": "Peut-on lui faire confiance ? Pourquoi ?",
+        "content": "On peut considérer Website Carbon Calculator comme une source fiable pour sensibiliser et comparer l’impact environnemental des sites web, mais pas comme une mesure absolue. <br/><ul><li>Le modèle utilisé (<a href='https://sustainablewebdesign.org/calculating-digital-emissions/' target='_blank'>Sustainable Web Design</a>) est reconnu et basé sur des publications scientifiques (<a href='https://www.iea.org/' target='_blank'>IEA</a>, Andrae, Malmodin).</li><li>Les résultats sont cohérents dans le temps et permettent de comparer deux sites ou deux pages de manière homogène.</li><li>Cependant, ce sont des estimations, avec une marge d’incertitude : il faut donc les interpréter comme des ordres de grandeur et non comme des chiffres exacts.</li></ul>En résumé : oui, on peut lui faire confiance pour <strong>sensibiliser</strong> et <strong>orienter des choix d’écoconception</strong>, mais pas pour réaliser un audit technique exhaustif."
+      }
+    ]
+  }
+}

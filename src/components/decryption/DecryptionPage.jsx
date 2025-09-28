@@ -3,6 +3,7 @@ import Navbar from "../shared/Navbar.jsx";
 import GeneralPresentation from "./GeneralPresentation.jsx";
 import TechnicalOperation from "./TechnicalOperation.jsx";
 import PracticalExample from "./PracticalExample.jsx";
+import LimitsAndBias from "./LimitsAndBias.jsx";
 
 const DecryptionPage = () => {
     usePageTitle("Decryption");
@@ -18,6 +19,7 @@ const DecryptionPage = () => {
                     <li><a href={"#general-presentation"}>Présentation Générale</a></li>
                     <li><a href={"#technical-operation"}>Présentation Technique</a></li>
                     <li><a href={"#practical-example"}>Exemple Pratique</a></li>
+                    <li><a href={"#limits-and-bias"}>Limites et biais</a></li>
                 </ul>
 
                 <div className="mt-8">
@@ -32,6 +34,10 @@ const DecryptionPage = () => {
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md">
                         <h2 id="practical-example">Exemple pratique</h2>
                         <PracticalExample />
+                    </div>
+                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md">
+                        <h2 id="limits-and-bias">Limites et biais</h2>
+                        <LimitsAndBias />
                     </div>
                 </div>
             </div>
