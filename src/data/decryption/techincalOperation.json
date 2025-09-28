@@ -1,7 +1,7 @@
 {
   "a" : {
     "title" : "Quels données l'outil analyse-t-il?",
-    "datas" : [
+    "data" : [
       {
         "title" : "Le volume de données transférées (poids de la page en Ko/Mo)",
         "content" : "C’est la donnée principale : l’outil mesure combien de données doivent être envoyées du serveur vers l’utilisateur lors du chargement de la page."

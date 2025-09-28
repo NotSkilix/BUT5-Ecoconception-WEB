@@ -4,9 +4,15 @@ import TextSection from "../shared/TextSection.jsx";
 const TechnicalOperation = () => {
     return (
         <div>
-            <h3>{text.a.title}</h3>
-            {text.a.datas.map((value,key) => (
-                <TextSection key={key} title={value.title} titleSize={"h4"} content={value.content} images={value.images}/>
+            {Object.entries(text).map(([key, section]) => (
+                <div key={key}>
+                    <h3>{section.title}</h3>
+                    {section.data.map((item, index) => (
+                        <div key={index}>
+                            <TextSection title={item.title} content={item.content} images={item.images} titleSize={"h4"}/>
+                        </div>
+                    ))}
+                </div>
             ))}
         </div>
     )
