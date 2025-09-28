@@ -10,8 +10,8 @@
         "title" : "La consommation énergétique associée au transfert",
         "content" : "Le poids de la page est converti en une estimation d’électricité consommée pour le transfert des données dans le réseau.",
         "images" : [
-          "decryption/energy1.png",
-          "decryption/energy2.png"
+          "decryption/technicalOperation/energy1.png",
+          "decryption/technicalOperation/energy2.png"
         ]
       },
       {
@@ -30,14 +30,14 @@
         "title" : "L’hébergement “vert” ou non (via Green Web Foundation)",
         "content" : "Si le site est hébergé chez un fournisseur utilisant des énergies renouvelables recensé par la Green Web Foundation, le calcul ajuste les émissions attribuées à l’hébergement.",
         "images" : [
-          "decryption/sustainableEnergy1.png",
-          "decryption/sustainableEnergy2.png"
+          "decryption/technicalOperation/sustainableEnergy1.png",
+          "decryption/technicalOperation/sustainableEnergy2.png"
         ]
       },
       {
         "title" : "Schéma de conclusion",
         "images": [
-          "decryption/recapFirstPart.png"
+          "decryption/technicalOperation/recapFirstPart.png"
         ]
       }
     ]
@@ -70,10 +70,10 @@
         "title" : "6/ Résultat final",
         "content" : "Le résultat est présenté sous forme de grammes de CO₂ par visite. L’outil (<a href='https://www.websitecarbon.com/how-does-it-work/' target='_blank'>Website Carbon Calculator</a>) propose aussi une projection annuelle si l’on renseigne le nombre moyen de visites par mois, ainsi qu’une comparaison avec la moyenne des sites testés.",
         "images": [
-          "decryption/conclusion1.png",
-          "decryption/conclusion2.png",
-          "decryption/conclusion3.png",
-          "decryption/conclusion4.png"
+          "decryption/technicalOperation/conclusion1.png",
+          "decryption/technicalOperation/conclusion2.png",
+          "decryption/technicalOperation/conclusion3.png",
+          "decryption/technicalOperation/conclusion4.png"
         ]
       }
     ]
@@ -94,38 +94,38 @@
         "title" : "Émissions de CO₂ par visite",
         "content" : "L’outil indique la quantité de CO₂ émise pour une seule visite de la page web, exprimée en grammes. Cela permet de visualiser l’impact direct d’une consultation individuelle.",
         "images" : [
-          "decryption/result1.png"
+          "decryption/technicalOperation/result1.png"
         ]
       },
       {
         "title" : "Classement de durabilité",
         "content" : "Le site est évalué sur une échelle de couleur (vert, jaune, rouge) ou en pourcentage de « site propre », permettant de situer rapidement sa performance environnementale par rapport à d’autres sites.",
         "images" : [
-          "decryption/result2.png"
+          "decryption/technicalOperation/result2.png"
         ]
       },
       {
         "title" : "Projection annuelle",
         "content" : "En renseignant le nombre moyen de visites par mois, l’outil calcule l’empreinte carbone annuelle totale, donnant une vision de l’impact global du site sur une année.",
         "images": [
-          "decryption/conclusion1.png",
-          "decryption/conclusion2.png",
-          "decryption/conclusion3.png",
-          "decryption/conclusion4.png"
+          "decryption/technicalOperation/conclusion1.png",
+          "decryption/technicalOperation/conclusion2.png",
+          "decryption/technicalOperation/conclusion3.png",
+          "decryption/technicalOperation/conclusion4.png"
         ]
       },
       {
         "title" : "Comparaison avec la moyenne",
         "content" : "Website Carbon Calculator montre comment le site se situe par rapport aux sites déjà testés, ce qui permet d’identifier les bonnes pratiques et les marges de progrès.",
         "images" : [
-            "decryption/result3.png"
+            "decryption/technicalOperation/result3.png"
         ]
       },
       {
         "title" : "Suggestions d’amélioration",
         "content" : "Certains résultats incluent des conseils pour réduire l’empreinte carbone, comme optimiser les images, activer la mise en cache, ou choisir un hébergeur utilisant des énergies renouvelables.",
         "images": [
-          "decryption/result4.png"
+          "decryption/technicalOperation/result4.png"
         ]
       }
     ]
