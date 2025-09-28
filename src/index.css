@@ -38,6 +38,9 @@
     a {
         @apply font-medium text-green-800 no-underline;
     }
+    strong {
+        @apply font-semibold text-green-900;
+    }
 
 }
 

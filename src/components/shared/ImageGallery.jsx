@@ -25,7 +25,7 @@ const
 
             {selectedImage && (
                 <div
-                    className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50"
+                    className="fixed inset-0 backdrop-blur-sm flex items-center justify-center"
                     onClick={() => setSelectedImage(null)}
                 >
                     <img
