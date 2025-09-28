@@ -86,5 +86,48 @@
         "content" : "Les données techniques (comme le poids de la page ou le volume de données transférées) proviennent directement de l’analyse effectuée par <a href='https://www.websitecarbon.com/how-does-it-work/' target='_blank'>Website Carbon Calculator</a> lorsqu’il charge l’URL testée. Pour estimer la consommation énergétique et les émissions de CO₂, l’outil s’appuie sur le <a href='https://sustainablewebdesign.org/estimating-digital-emissions/' target='_blank'>modèle Sustainable Web Design (version 4)</a>, qui compile des recherches de l’<a href='https://www.iea.org/' target='_blank'>Agence Internationale de l’Énergie (IEA)</a> ainsi que des études de référence (Andrae, Malmodin) sur l’impact énergétique du numérique. Les facteurs d’intensité carbone sont issus des rapports d’<a href='https://ember-climate.org/' target='_blank'>Ember</a>, qui mesurent les émissions de CO₂ par kWh d’électricité dans le monde. Enfin, les informations sur les hébergeurs « verts » proviennent de la <a href='https://www.thegreenwebfoundation.org/' target='_blank'>Green Web Foundation</a>."
       }
     ]
+  },
+  "d": {
+    "title" : "Quels sont les résultats fournis ?",
+    "data" : [
+      {
+        "title" : "Émissions de CO₂ par visite",
+        "content" : "L’outil indique la quantité de CO₂ émise pour une seule visite de la page web, exprimée en grammes. Cela permet de visualiser l’impact direct d’une consultation individuelle.",
+        "images" : [
+          "decryption/result1.png"
+        ]
+      },
+      {
+        "title" : "Classement de durabilité",
+        "content" : "Le site est évalué sur une échelle de couleur (vert, jaune, rouge) ou en pourcentage de « site propre », permettant de situer rapidement sa performance environnementale par rapport à d’autres sites.",
+        "images" : [
+          "decryption/result2.png"
+        ]
+      },
+      {
+        "title" : "Projection annuelle",
+        "content" : "En renseignant le nombre moyen de visites par mois, l’outil calcule l’empreinte carbone annuelle totale, donnant une vision de l’impact global du site sur une année.",
+        "images": [
+          "decryption/conclusion1.png",
+          "decryption/conclusion2.png",
+          "decryption/conclusion3.png",
+          "decryption/conclusion4.png"
+        ]
+      },
+      {
+        "title" : "Comparaison avec la moyenne",
+        "content" : "Website Carbon Calculator montre comment le site se situe par rapport aux sites déjà testés, ce qui permet d’identifier les bonnes pratiques et les marges de progrès.",
+        "images" : [
+            "decryption/result3.png"
+        ]
+      },
+      {
+        "title" : "Suggestions d’amélioration",
+        "content" : "Certains résultats incluent des conseils pour réduire l’empreinte carbone, comme optimiser les images, activer la mise en cache, ou choisir un hébergeur utilisant des énergies renouvelables.",
+        "images": [
+          "decryption/result4.png"
+        ]
+      }
+    ]
   }
 }
