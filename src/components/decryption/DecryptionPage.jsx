@@ -23,19 +23,19 @@ const DecryptionPage = () => {
                 </ul>
 
                 <div className="mt-8">
-                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md">
+                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id="general-presentation">Présentation générale</h2>
                         <GeneralPresentation />
                     </div>
-                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md">
+                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id="technical-operation">Présentation technique</h2>
                         <TechnicalOperation />
                     </div>
-                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md">
+                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id="practical-example">Exemple pratique</h2>
                         <PracticalExample />
                     </div>
-                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md">
+                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id="limits-and-bias">Limites et biais</h2>
                         <LimitsAndBias />
                     </div>
