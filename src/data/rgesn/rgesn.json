@@ -1,0 +1,21 @@
+{
+  "introduction" : [
+    {
+      "title" : "<a href='https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/' target='_blank'>Le RGSEN </a>",
+      "data": [
+        {
+          "title" : "Son Histoire",
+          "content" : "Le Référentiel Général d’Écoconception des Services Numériques (RGESN) a été publié pour la première fois en 2022 par la DINUM (Direction interministérielle du numérique). Il s’inscrit dans la continuité des initiatives françaises visant à réduire l’impact environnemental du numérique et à aligner les pratiques de conception web sur les objectifs de développement durable. Il constitue un document officiel de référence, pensé comme une boîte à outils pour les administrations publiques, mais aussi pour les acteurs privés souhaitant adopter de bonnes pratiques."
+        },
+        {
+          "title" : "Le contexte",
+          "content" : "Le RGESN s’inscrit dans un contexte de forte croissance de l’empreinte environnementale du numérique : consommation énergétique des data centers, pollution liée aux terminaux, émissions de gaz à effet de serre et production massive de déchets électroniques. En France, la loi REEN (Réduction de l’Empreinte Environnementale du Numérique) adoptée en 2021 a renforcé le besoin d’un cadre officiel. Le RGESN vient ainsi fournir un ensemble de critères clairs et pratiques pour aider à réduire l’empreinte écologique des services numériques, en s’appuyant sur des standards internationaux et les retours d’expérience de la communauté."
+        },
+        {
+          "title" : "Responsable",
+          "content" : "Le RGESN est porté par la DINUM (Direction interministérielle du numérique), qui coordonne sa mise en œuvre et son évolution. Il est également soutenu par le Gouvernement français et fait partie intégrante de la stratégie nationale de sobriété numérique. La DINUM travaille en lien avec divers partenaires publics et privés afin de garantir la pertinence et l’actualisation du référentiel."
+        }
+      ]
+    }
+  ]
+}
