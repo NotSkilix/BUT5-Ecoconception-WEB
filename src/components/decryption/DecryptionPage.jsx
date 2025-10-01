@@ -6,6 +6,7 @@ import PracticalExample from "./PracticalExample.jsx";
 import LimitsAndBias from "./LimitsAndBias.jsx";
 import EducationalApplication from "./EducationalApplication.jsx";
 import ButtonTopPage from "../shared/ButtonTopPage.jsx";
+import Conclusion from "./Conclusion.jsx";
 
 const DecryptionPage = () => {
     usePageTitle("Decryption");
@@ -24,6 +25,7 @@ const DecryptionPage = () => {
                         <li><a href={"#practical-example"}>Exemple Pratique</a></li>
                         <li><a href={"#limits-and-bias"}>Limites et biais</a></li>
                         <li><a href={"#educational-application"}>Application pédagogique</a></li>
+                        <li><a href={"#conclusion"}>Conclusion</a></li>
                     </ul>
                 </div>
                 <div className="mt-8">
@@ -47,6 +49,11 @@ const DecryptionPage = () => {
                         <h2 id="educational-application">Application pédagogique</h2>
                         <EducationalApplication />
                     </div>
+                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
+                        <h2 id="conclusion">Conclusion</h2>
+                        <Conclusion />
+                    </div>
+
                 </div>
             </div>
             <ButtonTopPage id={"top-page"} />

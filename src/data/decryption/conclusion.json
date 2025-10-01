@@ -1,0 +1,30 @@
+{
+  "advantages" : {
+    "title" : "Avantages",
+    "data" : [
+      "Outil simple et accessible, utilisable par un public non expert",
+      "Bonne capacité de sensibilisation à l’impact du numérique",
+      "Résultats concrets et parlants (gCO₂/visite, équivalences visuelles)",
+      "Permet une première estimation rapide de l’empreinte carbone",
+      "Basé sur un modèle reconnu (Sustainable Web Design)"
+    ]
+  },
+  "limits" : {
+    "title" : "Limites",
+    "data" : [
+      "Ne fournit qu’une approximation et non une mesure réelle",
+      "Ne prend pas en compte tous les paramètres (types d’appareils, localisation des utilisateurs…)",
+      "Dépend de moyennes mondiales (intensité carbone, consommation énergétique)",
+      "Ne reflète pas la performance réelle de chaque infrastructure",
+      "Doit être complété par des outils plus techniques pour un audit précis"
+    ]
+  },
+  "utility" : {
+    "title" : "Utilité",
+    "data" : [
+      "Idéal pour initier une démarche d’écoconception",
+      "Utile comme outil de communication et de sensibilisation",
+      "Point de départ avant d’aller vers des analyses plus poussées (ex. EcoIndex, Scaphandre)"
+    ]
+  }
+}
