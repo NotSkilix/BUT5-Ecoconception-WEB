@@ -12,7 +12,7 @@ const DecryptionPage = () => {
     usePageTitle("Decryption");
 
     return (
-        <div id="top-page">
+        <div>
             <Navbar />
             <div className="max-w-7xl mx-auto px-4 py-8 text-center">
                 <h1>🔍 Décryptage technique et pédagogique de Website Carbon Calculator </h1>

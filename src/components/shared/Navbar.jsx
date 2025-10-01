@@ -27,6 +27,9 @@ const Navbar = () => {
                     <Link to={BASE_URL+"decryptage"} className={getStyle("/decryptage")}>
                         Décryptage
                     </Link>
+                    <Link to={BASE_URL+"audit"} className={getStyle("/audit")}>
+                        Audit
+                    </Link>
                 </div>
             </nav>
         </div>

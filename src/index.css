@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -40,6 +36,9 @@
     }
     strong {
         @apply font-semibold text-green-900;
+    }
+    p {
+        @apply text-gray-700 leading-relaxed text-center
     }
 
 }
