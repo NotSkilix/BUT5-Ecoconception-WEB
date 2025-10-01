@@ -6,6 +6,7 @@ import toolsReportData from "../../data/toolsComparaison/toolsReport.json";
 import ToolsReport from "./ToolsReport.jsx";
 import Navbar from "../shared/Navbar.jsx";
 import usePageTitle from "../../hooks/usePageTitle.js";
+import ButtonTopPage from "../shared/ButtonTopPage.jsx";
 
 const ToolsComparaisonPage = () => {
     usePageTitle("Comparaison des Outils");
@@ -87,6 +88,7 @@ const ToolsComparaisonPage = () => {
                     </div>
                 )}
             </div>
+            <ButtonTopPage />
         </div>
     );
 };

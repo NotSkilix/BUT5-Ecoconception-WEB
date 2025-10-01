@@ -5,12 +5,13 @@ import TechnicalOperation from "./TechnicalOperation.jsx";
 import PracticalExample from "./PracticalExample.jsx";
 import LimitsAndBias from "./LimitsAndBias.jsx";
 import EducationalApplication from "./EducationalApplication.jsx";
+import ButtonTopPage from "../shared/ButtonTopPage.jsx";
 
 const DecryptionPage = () => {
     usePageTitle("Decryption");
 
     return (
-        <div>
+        <div id="top-page">
             <Navbar />
             <div className="max-w-7xl mx-auto px-4 py-8 text-center">
                 <h1>🔍 Décryptage technique et pédagogique de Website Carbon Calculator </h1>
@@ -48,6 +49,7 @@ const DecryptionPage = () => {
                     </div>
                 </div>
             </div>
+            <ButtonTopPage id={"top-page"} />
         </div>
     );
 }
