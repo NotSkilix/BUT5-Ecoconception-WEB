@@ -1,0 +1,41 @@
+{
+  "memo" : {
+    "title" : "Fiche mémo : Comment Website Carbon Calculator fonctionne ?",
+    "data" : [
+      {
+        "title" : "1/ Mesurer la taille de la page",
+        "content" : "L’outil calcule le poids total de la page (texte, images, vidéos, scripts) en kilo-octets ou méga-octets."
+      },
+      {
+        "title" : "2/ Estimer l’énergie consommée",
+        "content" : "Ce poids est converti en énergie nécessaire pour trois postes principaux : <ul><li>Les centres de données (serveurs)</li><li>Le réseau (transport des données)</li><li>Les appareils utilisateurs (ordinateur, smartphone, tablette)</li></ul>"
+      },
+      {
+        "title" : "3/ Appliquer un facteur carbone",
+        "content" : "L’électricité consommée est traduite en émissions de CO₂ grâce à un facteur moyen mondial (environ 494 gCO₂/kWh selon Ember)."
+      },
+      {
+        "title" : "4/ Ajuster selon l’hébergement",
+        "content" : "Si le site est hébergé par un fournisseur utilisant des énergies renouvelables (données fournies par la Green Web Foundation), l’impact est réduit."
+      },
+      {
+        "title" : "5/ Donner un résultat",
+        "content" : "Le résultat final est exprimé en grammes de CO₂ par visite, avec une comparaison à la moyenne des sites analysés. L’outil peut aussi donner une estimation annuelle si le nombre de visites est renseigné."
+      },
+      {
+        "images" : [
+          "decryption/educationalApplication/fiche_memo.webp"
+        ]
+      }
+    ]
+  },
+  "faq" : {
+    "title" : "FAQ – Question fréquente",
+    "data" : [
+      {
+        "title" : "« Si mon site est très rapide à charger, est-ce qu’il pollue moins ? »",
+        "content" : "Pas nécessairement. La vitesse de chargement dépend surtout de l’optimisation technique (serveur, code, mise en cache). Ce qui compte réellement pour l’empreinte carbone est le volume de données transférées et la source d’énergie utilisée par les serveurs. Un site léger et optimisé consommera moins d’énergie, même s’il n’est pas toujours plus rapide qu’un autre."
+      }
+    ]
+  }
+}
