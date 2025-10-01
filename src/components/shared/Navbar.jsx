@@ -5,6 +5,8 @@ const Navbar = () => {
     const BASE_URL = import.meta.env.BASE_URL;
 
     function getStyle(path){
+        path = BASE_URL+path
+        path = path.replace("//", "/")
         switch (path){
             case CURRENT_PATH: return "text-white font-bold underline"
             default: return "text-white hover:text-gray-300"
@@ -22,6 +24,9 @@ const Navbar = () => {
                     <Link to={BASE_URL+"comparaison-outils"} className={getStyle("/comparaison-outils")}>
                         Comparaison des outils
                     </Link>
+                    <Link to={BASE_URL+"decryptage"} className={getStyle("/decryptage")}>
+                        Décryptage
+                    </Link>
                 </div>
             </nav>
         </div>
@@ -29,17 +34,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-// import { Link } from "react-router-dom";
-//
-// function Navbar() {
-//     return (
-//         <nav className="bg-green-800 p-4">
-//             <div className="container mx-auto flex justify-between">
-//                 <Link to="/" className="text-white font-bold">Accueil</Link>
-//             </div>
-//         </nav>
-//     );
-// }
-//
-// export default Navbar;

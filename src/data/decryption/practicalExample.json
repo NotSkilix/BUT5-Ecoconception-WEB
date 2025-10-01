@@ -1,0 +1,63 @@
+{
+  "test": {
+    "title": "Test de l'outil sur mon site",
+    "subtitle" : "<a href='https://www.mairie-braud.fr' target='_blank'>La Mairie de Braud et Saint Louis</a>",
+    "data": [
+      {
+        "content": "Le site choisi est celui de la mairie dans laquelle j'ai vécu pendant 15 ans. Ce dernier est toujours mis à jour régulièrement par les agents travaillant à la mairie mais n'est plus entretenu techniquement par un webmaster. Cela explique en partie certaines limites observées lors de l’analyse."
+      },
+      {
+        "content": "Ce site est représentatif d’une grande partie des sites institutionnels locaux en France : développés il y a plusieurs années, souvent sur des CMS ou via des solutions externalisées, mais rarement optimisés pour la performance énergétique et l’écoconception. <br/>Pour référence, voir le <a href='https://ecoresponsable.numerique.gouv.fr/publications/guide-pratique/' target='_blank'>Guide d’écoconception de services numériques (DINUM)</a>."
+      },
+      {
+        "content": "Avant de lancer le test sur Website Carbon Calculator, il est également possible de faire une première analyse technique via des outils comme : <br/><ul><li><a href='https://pagespeed.web.dev/' target='_blank'>Google PageSpeed Insights</a></li><li><a href='https://gtmetrix.com/' target='_blank'>GTmetrix</a></li></ul>Ces outils mettent en évidence le poids de la page, les ressources appelées et les temps de chargement."
+      }
+    ]
+  },
+  "interpretation": {
+    "title" : "Interprétation des résultats obtenus",
+    "data" : [
+      {
+        "title" : "Le résultat",
+        "content" : "Vous pouvez voir le résultat de mon test juste <a href='https://www.websitecarbon.com/website/mairie-braud-fr/' target='_blank'>ici</a>. <br/>On remarque que le site n'est absolument pas bien classé et est globalement très mauvais.",
+        "images" : [
+          "decryption/technicalOperation/result2.png"
+        ]
+      },
+      {
+        "content" : "On peut alors voir que le site est classé F, et qu'il est 98 % plus « sale » que n'importe quelle autre page au monde. <br/> Nous pouvons voir ensuite que le site produit environ <strong>2,15 g de CO₂</strong> à chaque visite.",
+        "images" : [
+          "decryption/practicalExample/result1.png"
+        ]
+      },
+      {
+        "content" : "Cependant, on y voit aussi que le site web tournerait à l'énergie verte ! On peut vérifier manuellement avec l'un des outils les plus réputés : <a href='https://www.thegreenwebfoundation.org/green-web-check/' target='_blank'>The Green Web Foundation</a>, qu'utilise également Website Carbon Calculator."
+      },
+      {
+        "content" : "Si on revient à l'empreinte carbone du site web, comme expliqué dans les sections précédentes, Website Carbon Calculator permet de nous faire une estimation de l’empreinte carbone d’un site en fonction du nombre d’utilisateurs renseigné.",
+        "images": [
+          "decryption/technicalOperation/conclusion1.png",
+          "decryption/technicalOperation/conclusion2.png",
+          "decryption/technicalOperation/conclusion3.png",
+          "decryption/technicalOperation/conclusion4.png"
+        ]
+      },
+      {
+        "content" : "En voyant ceci, on ne se rend pas encore compte de l’impact écologique concret du site. Pour se donner un ordre d’idée, <strong>1 000 utilisateurs représentent environ 64 kWh</strong>, soit l’équivalent de <strong>409 km parcourus avec une voiture électrique</strong>. <br/> C’est comparable à <a href='https://www.google.com/maps/dir/La+Rochelle/Toulouse/' target='_blank'>La Rochelle → Toulouse (420 km)</a>."
+      },
+      {
+        "title" : "Conclusion",
+        "content" : "Nous pouvons conclure en disant que le site est mauvais pour l'environnement. Comme vu précédemment, il est très lourd, lent à charger, et lorsque l'on consulte la section « Network » de l’inspecteur du navigateur, on observe de très nombreux appels API et vers des serveurs externes. Le cumul dépasse 10 000 ms (10 secondes), et certains appels isolés prennent jusqu'à 264 ms. <br/>",
+        "images" : [
+          "decryption/practicalExample/websiteAnalyse1.png"
+        ]
+      },
+      {
+        "content" : "Les personnes ayant réalisé le site ont probablement suivi les méthodes de création web classiques de l’époque : un fichier HTML, un fichier CSS, et quelques scripts JavaScript. À l’époque, cela suffisait largement. Mais aujourd’hui, un site qui charge lentement, qui utilise beaucoup de ressources, et qui n’est pas optimisé pour le mobile ou l’écoconception est perçu comme obsolète et peu ergonomique."
+      },
+      {
+        "content" : "Parmi les pistes d’optimisation possibles :<br/><ul><li>Réduire et compresser les images (utiliser WebP ou AVIF plutôt que PNG).</li><li>Mettre en place un système de cache efficace.</li><li>Limiter les appels API et mutualiser les ressources.</li><li>Utiliser un hébergement certifié « vert ».</li><li>Optimiser le code source.</li></ul><br/>Ces améliorations permettraient non seulement de réduire l’empreinte carbone du site, mais aussi d’améliorer l’expérience utilisateur."
+      }
+    ]
+  }
+}

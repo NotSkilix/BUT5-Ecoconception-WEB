@@ -5,8 +5,10 @@ import toolsComparison from "../../data/toolsComparaison/toolsComparaison.json";
 import toolsReportData from "../../data/toolsComparaison/toolsReport.json";
 import ToolsReport from "./ToolsReport.jsx";
 import Navbar from "../shared/Navbar.jsx";
+import usePageTitle from "../../hooks/usePageTitle.js";
 
 const ToolsComparaisonPage = () => {
+    usePageTitle("Comparaison des Outils");
     const [tools, setTools] = React.useState({});
 
     // Load tools data once on mount
