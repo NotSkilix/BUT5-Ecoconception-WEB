@@ -2,8 +2,14 @@ import Navbar from "../shared/Navbar.jsx";
 import text from "../../data/home/homeText.json"
 import HomeText from "./HomeText.jsx";
 import usePageTitle from "../../hooks/usePageTitle.js";
+import React, {useEffect} from "react";
 
 const Home = () => {
+    const BASE_URL= import.meta.env.BASE_URL;
+    useEffect(() => {
+        window.history.replaceState(null, "", BASE_URL)
+    }, [BASE_URL]);
+
     usePageTitle("Accueil");
 
     return (
