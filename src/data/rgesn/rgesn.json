@@ -16,6 +16,43 @@
           "content" : "Le RGESN est porté par la DINUM (Direction interministérielle du numérique), qui coordonne sa mise en œuvre et son évolution. Il est également soutenu par le Gouvernement français et fait partie intégrante de la stratégie nationale de sobriété numérique. La DINUM travaille en lien avec divers partenaires publics et privés afin de garantir la pertinence et l’actualisation du référentiel."
         }
       ]
+    },
+    {
+      "title" : "Les familles de bonnes pratiques",
+      "data" : [
+        {
+          "content" : "Le RGESN regroupe ses recommandations en 8 grandes familles de bonnes pratiques qui couvrent l’ensemble du cycle de vie d’un service numérique : <br/><br/><ul><li>Gestion de projet et gouvernance</li><li>Spécifications fonctionnelles et techniques</li><li>Architecture et conception</li><li>Interfaces utilisateurs et design</li><li>Contenus et médias</li><li>Développement et code</li><li>Hébergement et infrastructures</li><li>Mesure, suivi et amélioration continue</li></ul>"
+        }
+      ]
+    },
+    {
+      "title" : "Sélection de 5 critères pertinents pour un service numérique grand public.",
+      "data": [
+        {
+          "title" : "Poids des pages",
+          "content" : "Un poids réduit améliore les performances, réduit la consommation énergétique et favorise l’accessibilité aux utilisateurs disposant de connexions limitées."
+        },
+        {
+          "title" : "Nombre de requêtes HTTP",
+          "content" : "Limiter le nombre de requêtes optimise la vitesse de chargement et diminue la consommation des ressources côté client et réseau."
+        },
+        {
+          "title" : "Performance et temps de chargement",
+          "content" : "Essentiel pour l’expérience utilisateur, la satisfaction et la réduction des ressources énergétiques consommées lors du rendu."
+        },
+        {
+          "title" : "Accessibilité et sobriété du design",
+          "content" : "Garantir que le service est utilisable par tous, tout en évitant les contenus lourds et superflus (animations excessives, médias non optimisés)."
+        },
+        {
+          "title" : "Optimisation des images et médias",
+          "content" : "Les contenus visuels représentent souvent la majeure partie du poids d’une page, leur optimisation est donc clé pour réduire l’impact environnemental."
+        },
+        {
+          "title" : "Justification",
+          "content" : "Ces critères sont directement observables et mesurables depuis le front, sans avoir besoin d’un accès au back-office ou aux serveurs. Ils influencent fortement l’expérience utilisateur tout en ayant un impact significatif sur l’empreinte environnementale. De plus, ils sont cohérents avec les recommandations du <a href='https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/' target='_blank'>RGESN</a> et facilement actionnables par les équipes de développement web côté client."
+        }
+      ]
     }
   ]
 }
