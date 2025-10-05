@@ -54,5 +54,67 @@
         }
       ]
     }
-  ]
+  ],
+  "audit" : {
+    "title" : "Site de test : <a href='https://www.mairie-braud.fr target='_blank'>La Mairie de Braud et Saint Louis</a>",
+    "fields" : [
+      {
+        "field_name" : "famille",
+        "display_name" : "Famille"
+      },
+      {
+        "field_name" : "critere",
+        "display_name" : "Critères"
+      },
+      {
+        "field_name" : "respecte",
+        "display_name" : "Respecte"
+      },
+      {
+        "field_name" : "observations",
+        "display_name": "Observation"
+      },
+      {
+        "field_name" : "outils",
+        "display_name": "Outils"
+      }
+    ],
+    "data": [
+      {
+        "famille": "Architecture et conception",
+        "critere": "Limiter le poids des pages",
+        "respecte": "Non",
+        "observations": "Le site reçoit une note « F » sur la plateforme Website Carbon, ce qui indique qu’il est plus polluant que 100 % des sites testés. :contentReference[oaicite:0]{index=0} Le site déclare « 0.0 g de CO₂ » dans les résultats, probablement en raison d’un hébergement déclaré comme utilisant de l’énergie durable. :contentReference[oaicite:1]{index=1}",
+        "outils": "Website Carbon"
+      },
+      {
+        "famille": "Performance et accessibilité",
+        "critere": "Optimiser le temps de chargement",
+        "respecte": "Partiellement",
+        "observations": "Le test PageSpeed mobile du site <i>mairie-braud.fr</i> montre des performances insuffisantes (score faible), ce qui suggère des temps de chargement non optimaux sur mobile. (Analyse via PageSpeed Insights) :contentReference[oaicite:2]{index=2}",
+        "outils": "PageSpeed Insights (mobile)"
+      },
+      {
+        "famille": "Contenus et médias",
+        "critere": "Optimiser les images et les médias",
+        "respecte": "Non",
+        "observations": "Vu la note de « F » sur Website Carbon, il est probable que les contenus médias (images, etc.) soient lourds ou peu optimisés. :contentReference[oaicite:3]{index=3}",
+        "outils": "Website Carbon, PageSpeed Insights"
+      },
+      {
+        "famille": "Développement et code",
+        "critere": "Réduire le nombre de requêtes HTTP",
+        "respecte": "Partiellement",
+        "observations": "L’analyse PageSpeed identifie souvent des scripts ou ressources bloquantes, ce qui suggère que le site charge plusieurs requêtes externes ou redondantes. (observé dans les rapports PageSpeed généraux) :contentReference[oaicite:4]{index=4}",
+        "outils": "PageSpeed Insights"
+      },
+      {
+        "famille": "Design et expérience utilisateur",
+        "critere": "Garantir la sobriété et l’accessibilité du design",
+        "respecte": "Partiellement",
+        "observations": "Le site officiel de la mairie affiche du contenu textuel clair, mais la note « Partiellement conforme » pour l’accessibilité est signalée dans les mentions légales du site IntraMuros. :contentReference[oaicite:5]{index=5}",
+        "outils": "IntraMuros / site officiel"
+      }
+    ]
+  }
 }
