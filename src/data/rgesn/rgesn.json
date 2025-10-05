@@ -116,5 +116,24 @@
         "outils": "IntraMuros / site officiel"
       }
     ]
-  }
+  },
+  "analyse": [
+    {
+      "title": "Analyse et recommandations",
+      "data": [
+        {
+          "title": "Critère 1 – Optimisation des images et médias",
+          "content": "<ul><li><strong>Action à mener :</strong> Compresser et redimensionner les images (formats WebP/AVIF), mettre en place un chargement différé (lazy loading).</li><li><strong>Acteurs concernés :</strong> Développeur front-end, designer, chef de projet.</li><li><strong>Gains attendus :</strong> Jusqu’à -40% de poids total de la page, amélioration du score de performance PageSpeed.</li><li><strong>Freins possibles :</strong> Temps de traitement des images, compatibilité navigateur, ajustement du design.</li></ul>"
+        },
+        {
+          "title": "Critère 2 – Limitation du poids global des pages",
+          "content": "<ul><li><strong>Action à mener :</strong> Supprimer les scripts inutiles, minifier le code CSS/JS, réduire le nombre de ressources externes.</li><li><strong>Acteurs concernés :</strong> Développeur front-end, intégrateur, responsable technique.</li><li><strong>Gains attendus :</strong> Réduction des données transférées (-30%), chargement plus rapide sur mobile et meilleure accessibilité.</li><li><strong>Freins possibles :</strong> Nécessite un audit technique complet et un suivi continu.</li></ul>"
+        },
+        {
+          "title": "Critère 3 – Performance et temps de chargement",
+          "content": "<ul><li><strong>Action à mener :</strong> Mettre en place un système de cache et un CDN (Content Delivery Network) pour servir les ressources plus rapidement.</li><li><strong>Acteurs concernés :</strong> Développeur back-end, hébergeur, administrateur système.</li><li><strong>Gains attendus :</strong> Réduction du temps de chargement jusqu’à 50%, amélioration du score de performance PageSpeed.</li><li><strong>Freins possibles :</strong> Coût du CDN, complexité de configuration, besoin de maintenance régulière.</li></ul>"
+        }
+      ]
+    }
+  ]
 }
