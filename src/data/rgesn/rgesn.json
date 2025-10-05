@@ -119,7 +119,6 @@
   },
   "analyse": [
     {
-      "title": "Analyse et recommandations",
       "data": [
         {
           "title": "Critère 1 – Optimisation des images et médias",
@@ -132,6 +131,24 @@
         {
           "title": "Critère 3 – Performance et temps de chargement",
           "content": "<ul><li><strong>Action à mener :</strong> Mettre en place un système de cache et un CDN (Content Delivery Network) pour servir les ressources plus rapidement.</li><li><strong>Acteurs concernés :</strong> Développeur back-end, hébergeur, administrateur système.</li><li><strong>Gains attendus :</strong> Réduction du temps de chargement jusqu’à 50%, amélioration du score de performance PageSpeed.</li><li><strong>Freins possibles :</strong> Coût du CDN, complexité de configuration, besoin de maintenance régulière.</li></ul>"
+        }
+      ]
+    }
+  ],
+  "action": [
+    {
+      "data": [
+        {
+          "title": "Priorité 1 – Optimisation des images et médias",
+          "content": "<ul><li><strong>Objectif :</strong> Réduire rapidement le poids des pages pour améliorer la performance et diminuer les émissions de CO₂.</li><li><strong>Actions :</strong> Conversion des images en formats modernes (WebP, AVIF), compression, redimensionnement et mise en place du lazy loading.</li><li><strong>Responsables :</strong> Développeur front-end et designer.</li><li><strong>Échéance :</strong> Semaine 1 à 2.</li><li><strong>Moyens nécessaires :</strong> Utilisation de plugins ou outils comme Squoosh, TinyPNG, ou ImageOptim.</li><li><strong>Impact environnemental :</strong> Élevé (jusqu’à -40 % d’émissions liées au transfert de données).</li><li><strong>Coût :</strong> Faible.</li></ul>"
+        },
+        {
+          "title": "Priorité 2 – Réduction du poids global et des requêtes",
+          "content": "<ul><li><strong>Objectif :</strong> Alléger le code et limiter le nombre de ressources chargées pour réduire le trafic réseau et la consommation énergétique.</li><li><strong>Actions :</strong> Minification du code CSS/JS, suppression des scripts inutiles, regroupement des fichiers et suppression des dépendances superflues.</li><li><strong>Responsables :</strong> Développeur front-end, intégrateur.</li><li><strong>Échéance :</strong> Semaine 3 à 4.</li><li><strong>Moyens nécessaires :</strong> Utilisation d’outils comme Lighthouse, Webpack ou PageSpeed Insights.</li><li><strong>Impact environnemental :</strong> Élevé (réduction de la bande passante et du temps de chargement).</li><li><strong>Coût :</strong> Modéré (nécessite du temps d’analyse et d’optimisation technique).</li></ul>"
+        },
+        {
+          "title": "Priorité 3 – Mise en place d’un cache et d’un CDN",
+          "content": "<ul><li><strong>Objectif :</strong> Améliorer durablement la vitesse de chargement et réduire les requêtes vers le serveur d’origine.</li><li><strong>Actions :</strong> Configurer un système de cache navigateur et mettre en place un CDN pour distribuer les ressources statiques.</li><li><strong>Responsables :</strong> Développeur back-end, administrateur système, hébergeur.</li><li><strong>Échéance :</strong> Mois 2.</li><li><strong>Moyens nécessaires :</strong> Mise en place via Cloudflare, Fastly ou un service CDN équivalent.</li><li><strong>Impact environnemental :</strong> Moyen à élevé (réduction des requêtes réseau et meilleure efficacité énergétique).</li><li><strong>Coût :</strong> Moyen (liés aux services tiers et à la maintenance continue).</li></ul>"
         }
       ]
     }

@@ -3,6 +3,7 @@ import Introduction from "./Introduction.jsx";
 import ButtonTopPage from "../shared/ButtonTopPage.jsx";
 import Audit from "./Audit.jsx";
 import Analyse from "./Analyse.jsx";
+import ActionPlan from "./ActionPlan.jsx";
 
 const RGESNPage = () => {
     return (
@@ -19,6 +20,7 @@ const RGESNPage = () => {
                         <li><a href={"#introduction"}>Introduction</a></li>
                         <li><a href={"#audit"}>Audit selon le RGESN</a></li>
                         <li><a href={"#analyse"}>Analyse et recommendations</a></li>
+                        <li><a href={"#action"}>Plan d'action priorisé</a></li>
                     </ul>
                 </div>
 
@@ -34,6 +36,10 @@ const RGESNPage = () => {
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"analyse"}>Analyse et recommendations</h2>
                         <Analyse />
+                    </div>
+                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
+                        <h2 id={"action"}>Plan d'action priorisé</h2>
+                        <ActionPlan />
                     </div>
                 </div>
             </div>
