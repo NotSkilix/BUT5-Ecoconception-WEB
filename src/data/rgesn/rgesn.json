@@ -1,0 +1,174 @@
+{
+  "introduction" : [
+    {
+      "title" : "<a href='https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/' target='_blank'>Le RGSEN </a>",
+      "data": [
+        {
+          "title" : "Son Histoire",
+          "content" : "Le Référentiel Général d’Écoconception des Services Numériques (RGESN) a été publié pour la première fois en 2022 par la DINUM (Direction interministérielle du numérique). Il s’inscrit dans la continuité des initiatives françaises visant à réduire l’impact environnemental du numérique et à aligner les pratiques de conception web sur les objectifs de développement durable. Il constitue un document officiel de référence, pensé comme une boîte à outils pour les administrations publiques, mais aussi pour les acteurs privés souhaitant adopter de bonnes pratiques."
+        },
+        {
+          "title" : "Le contexte",
+          "content" : "Le RGESN s’inscrit dans un contexte de forte croissance de l’empreinte environnementale du numérique : consommation énergétique des data centers, pollution liée aux terminaux, émissions de gaz à effet de serre et production massive de déchets électroniques. En France, la loi REEN (Réduction de l’Empreinte Environnementale du Numérique) adoptée en 2021 a renforcé le besoin d’un cadre officiel. Le RGESN vient ainsi fournir un ensemble de critères clairs et pratiques pour aider à réduire l’empreinte écologique des services numériques, en s’appuyant sur des standards internationaux et les retours d’expérience de la communauté."
+        },
+        {
+          "title" : "Responsable",
+          "content" : "Le RGESN est porté par la DINUM (Direction interministérielle du numérique), qui coordonne sa mise en œuvre et son évolution. Il est également soutenu par le Gouvernement français et fait partie intégrante de la stratégie nationale de sobriété numérique. La DINUM travaille en lien avec divers partenaires publics et privés afin de garantir la pertinence et l’actualisation du référentiel."
+        }
+      ]
+    },
+    {
+      "title" : "Les familles de bonnes pratiques",
+      "data" : [
+        {
+          "content" : "Le RGESN regroupe ses recommandations en 8 grandes familles de bonnes pratiques qui couvrent l’ensemble du cycle de vie d’un service numérique : <br/><br/><ul><li>Gestion de projet et gouvernance</li><li>Spécifications fonctionnelles et techniques</li><li>Architecture et conception</li><li>Interfaces utilisateurs et design</li><li>Contenus et médias</li><li>Développement et code</li><li>Hébergement et infrastructures</li><li>Mesure, suivi et amélioration continue</li></ul>"
+        }
+      ]
+    },
+    {
+      "title" : "Sélection de 5 critères pertinents pour un service numérique grand public.",
+      "data": [
+        {
+          "title" : "Poids des pages",
+          "content" : "Un poids réduit améliore les performances, réduit la consommation énergétique et favorise l’accessibilité aux utilisateurs disposant de connexions limitées."
+        },
+        {
+          "title" : "Nombre de requêtes HTTP",
+          "content" : "Limiter le nombre de requêtes optimise la vitesse de chargement et diminue la consommation des ressources côté client et réseau."
+        },
+        {
+          "title" : "Performance et temps de chargement",
+          "content" : "Essentiel pour l’expérience utilisateur, la satisfaction et la réduction des ressources énergétiques consommées lors du rendu."
+        },
+        {
+          "title" : "Accessibilité et sobriété du design",
+          "content" : "Garantir que le service est utilisable par tous, tout en évitant les contenus lourds et superflus (animations excessives, médias non optimisés)."
+        },
+        {
+          "title" : "Optimisation des images et médias",
+          "content" : "Les contenus visuels représentent souvent la majeure partie du poids d’une page, leur optimisation est donc clé pour réduire l’impact environnemental."
+        },
+        {
+          "title" : "Justification",
+          "content" : "Ces critères sont directement observables et mesurables depuis le front, sans avoir besoin d’un accès au back-office ou aux serveurs. Ils influencent fortement l’expérience utilisateur tout en ayant un impact significatif sur l’empreinte environnementale. De plus, ils sont cohérents avec les recommandations du <a href='https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/' target='_blank'>RGESN</a> et facilement actionnables par les équipes de développement web côté client."
+        }
+      ]
+    }
+  ],
+  "audit" : {
+    "title" : "Site de test : <a href='https://www.mairie-braud.fr target='_blank'>La Mairie de Braud et Saint Louis</a>",
+    "fields" : [
+      {
+        "field_name" : "famille",
+        "display_name" : "Famille"
+      },
+      {
+        "field_name" : "critere",
+        "display_name" : "Critères"
+      },
+      {
+        "field_name" : "respecte",
+        "display_name" : "Respecte"
+      },
+      {
+        "field_name" : "observations",
+        "display_name": "Observation"
+      },
+      {
+        "field_name" : "outils",
+        "display_name": "Outils"
+      }
+    ],
+    "data": [
+      {
+        "famille": "Architecture et conception",
+        "critere": "Limiter le poids des pages",
+        "respecte": "Non",
+        "observations": "Le site reçoit une note « F » sur la plateforme Website Carbon, ce qui indique qu’il est plus polluant que 100 % des sites testés. :contentReference[oaicite:0]{index=0} Le site déclare « 0.0 g de CO₂ » dans les résultats, probablement en raison d’un hébergement déclaré comme utilisant de l’énergie durable. :contentReference[oaicite:1]{index=1}",
+        "outils": "Website Carbon"
+      },
+      {
+        "famille": "Performance et accessibilité",
+        "critere": "Optimiser le temps de chargement",
+        "respecte": "Partiellement",
+        "observations": "Le test PageSpeed mobile du site <i>mairie-braud.fr</i> montre des performances insuffisantes (score faible), ce qui suggère des temps de chargement non optimaux sur mobile. (Analyse via PageSpeed Insights) :contentReference[oaicite:2]{index=2}",
+        "outils": "PageSpeed Insights (mobile)"
+      },
+      {
+        "famille": "Contenus et médias",
+        "critere": "Optimiser les images et les médias",
+        "respecte": "Non",
+        "observations": "Vu la note de « F » sur Website Carbon, il est probable que les contenus médias (images, etc.) soient lourds ou peu optimisés. :contentReference[oaicite:3]{index=3}",
+        "outils": "Website Carbon, PageSpeed Insights"
+      },
+      {
+        "famille": "Développement et code",
+        "critere": "Réduire le nombre de requêtes HTTP",
+        "respecte": "Partiellement",
+        "observations": "L’analyse PageSpeed identifie souvent des scripts ou ressources bloquantes, ce qui suggère que le site charge plusieurs requêtes externes ou redondantes. (observé dans les rapports PageSpeed généraux) :contentReference[oaicite:4]{index=4}",
+        "outils": "PageSpeed Insights"
+      },
+      {
+        "famille": "Design et expérience utilisateur",
+        "critere": "Garantir la sobriété et l’accessibilité du design",
+        "respecte": "Partiellement",
+        "observations": "Le site officiel de la mairie affiche du contenu textuel clair, mais la note « Partiellement conforme » pour l’accessibilité est signalée dans les mentions légales du site IntraMuros. :contentReference[oaicite:5]{index=5}",
+        "outils": "IntraMuros / site officiel"
+      }
+    ]
+  },
+  "analyse": [
+    {
+      "data": [
+        {
+          "title": "Critère 1 – Optimisation des images et médias",
+          "content": "<ul><li><strong>Action à mener :</strong> Compresser et redimensionner les images (formats WebP/AVIF), mettre en place un chargement différé (lazy loading).</li><li><strong>Acteurs concernés :</strong> Développeur front-end, designer, chef de projet.</li><li><strong>Gains attendus :</strong> Jusqu’à -40% de poids total de la page, amélioration du score de performance PageSpeed.</li><li><strong>Freins possibles :</strong> Temps de traitement des images, compatibilité navigateur, ajustement du design.</li></ul>"
+        },
+        {
+          "title": "Critère 2 – Limitation du poids global des pages",
+          "content": "<ul><li><strong>Action à mener :</strong> Supprimer les scripts inutiles, minifier le code CSS/JS, réduire le nombre de ressources externes.</li><li><strong>Acteurs concernés :</strong> Développeur front-end, intégrateur, responsable technique.</li><li><strong>Gains attendus :</strong> Réduction des données transférées (-30%), chargement plus rapide sur mobile et meilleure accessibilité.</li><li><strong>Freins possibles :</strong> Nécessite un audit technique complet et un suivi continu.</li></ul>"
+        },
+        {
+          "title": "Critère 3 – Performance et temps de chargement",
+          "content": "<ul><li><strong>Action à mener :</strong> Mettre en place un système de cache et un CDN (Content Delivery Network) pour servir les ressources plus rapidement.</li><li><strong>Acteurs concernés :</strong> Développeur back-end, hébergeur, administrateur système.</li><li><strong>Gains attendus :</strong> Réduction du temps de chargement jusqu’à 50%, amélioration du score de performance PageSpeed.</li><li><strong>Freins possibles :</strong> Coût du CDN, complexité de configuration, besoin de maintenance régulière.</li></ul>"
+        }
+      ]
+    }
+  ],
+  "action": [
+    {
+      "data": [
+        {
+          "title": "Priorité 1 – Optimisation des images et médias",
+          "content": "<ul><li><strong>Objectif :</strong> Réduire rapidement le poids des pages pour améliorer la performance et diminuer les émissions de CO₂.</li><li><strong>Actions :</strong> Conversion des images en formats modernes (WebP, AVIF), compression, redimensionnement et mise en place du lazy loading.</li><li><strong>Responsables :</strong> Développeur front-end et designer.</li><li><strong>Échéance :</strong> Semaine 1 à 2.</li><li><strong>Moyens nécessaires :</strong> Utilisation de plugins ou outils comme Squoosh, TinyPNG, ou ImageOptim.</li><li><strong>Impact environnemental :</strong> Élevé (jusqu’à -40 % d’émissions liées au transfert de données).</li><li><strong>Coût :</strong> Faible.</li></ul>"
+        },
+        {
+          "title": "Priorité 2 – Réduction du poids global et des requêtes",
+          "content": "<ul><li><strong>Objectif :</strong> Alléger le code et limiter le nombre de ressources chargées pour réduire le trafic réseau et la consommation énergétique.</li><li><strong>Actions :</strong> Minification du code CSS/JS, suppression des scripts inutiles, regroupement des fichiers et suppression des dépendances superflues.</li><li><strong>Responsables :</strong> Développeur front-end, intégrateur.</li><li><strong>Échéance :</strong> Semaine 3 à 4.</li><li><strong>Moyens nécessaires :</strong> Utilisation d’outils comme Lighthouse, Webpack ou PageSpeed Insights.</li><li><strong>Impact environnemental :</strong> Élevé (réduction de la bande passante et du temps de chargement).</li><li><strong>Coût :</strong> Modéré (nécessite du temps d’analyse et d’optimisation technique).</li></ul>"
+        },
+        {
+          "title": "Priorité 3 – Mise en place d’un cache et d’un CDN",
+          "content": "<ul><li><strong>Objectif :</strong> Améliorer durablement la vitesse de chargement et réduire les requêtes vers le serveur d’origine.</li><li><strong>Actions :</strong> Configurer un système de cache navigateur et mettre en place un CDN pour distribuer les ressources statiques.</li><li><strong>Responsables :</strong> Développeur back-end, administrateur système, hébergeur.</li><li><strong>Échéance :</strong> Mois 2.</li><li><strong>Moyens nécessaires :</strong> Mise en place via Cloudflare, Fastly ou un service CDN équivalent.</li><li><strong>Impact environnemental :</strong> Moyen à élevé (réduction des requêtes réseau et meilleure efficacité énergétique).</li><li><strong>Coût :</strong> Moyen (liés aux services tiers et à la maintenance continue).</li></ul>"
+        }
+      ]
+    }
+  ],
+  "conclusion": [
+    {
+      "data": [
+        {
+          "title": "Fiche mémo – Les étapes clés d’un audit RGESN",
+          "content": "L’audit RGESN se déroule en plusieurs étapes successives et complémentaires, permettant d’évaluer la conformité d’un service numérique aux bonnes pratiques environnementales. <br/><br/><ul><li><strong>1. Préparation :</strong> Identifier le périmètre du service à auditer (site, application, module) et les objectifs de l’audit.</li><li><strong>2. Sélection des critères :</strong> Choisir les critères RGESN pertinents selon la nature du service (poids des pages, accessibilité, hébergement, etc.).</li><li><strong>3. Collecte des données :</strong> Utiliser des outils d’analyse (Website Carbon, PageSpeed Insights, EcoIndex, GreenIT Analysis) pour mesurer les indicateurs clés.</li><li><strong>4. Évaluation :</strong> Comparer les résultats obtenus avec les bonnes pratiques RGESN pour déterminer le niveau de conformité.</li><li><strong>5. Recommandations :</strong> Identifier les points d’amélioration et proposer des actions concrètes avec priorisation.</li><li><strong>6. Suivi et amélioration continue :</strong> Mettre en œuvre les actions correctrices, suivre leur impact et intégrer la démarche dans les processus de développement.</li></ul>",
+          "images": [
+            "rgesn/audit_schema_simple.png",
+            "rgesn/audit_cycle_amelioration.png"
+          ]
+        },
+        {
+          "title": "Note de synthèse à destination de la direction",
+          "content": "<p>Se conformer au <a href='https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/' target='_blank'>Référentiel Général d’Écoconception des Services Numériques (RGESN)</a> représente aujourd’hui un levier stratégique pour tout service public ou privé. Au-delà d’une exigence réglementaire, il s’agit d’un engagement fort en faveur de la durabilité, de l’efficience et de l’innovation responsable.</p><br/><ul><li><strong>1. Pourquoi se conformer au RGESN ?</strong><ul><li>Assurer la cohérence entre la stratégie numérique et les objectifs de transition écologique.</li><li>Garantir la qualité, la performance et l’accessibilité des services proposés aux usagers.</li></ul></li><li><strong>2. Bénéfices attendus :</strong><ul><li><strong>Environnementaux :</strong> Réduction des émissions de CO₂ liées à l’hébergement et à l’usage.</li><li><strong>Économiques :</strong> Optimisation des ressources serveurs, réduction des coûts d’infrastructure et de maintenance.</li><li><strong>Image et communication :</strong> Valorisation de l’engagement institutionnel, amélioration de la perception du service par le public et conformité aux politiques publiques (loi REEN, stratégie numérique responsable).</li></ul></li><li><strong>3. Comment convaincre les parties prenantes :</strong><ul><li>Sensibiliser à l’impact environnemental du numérique à travers des exemples concrets.</li><li>Mettre en avant les gains mesurables (performance, coûts, satisfaction utilisateur).</li><li>Intégrer l’écoconception dès la phase de conception pour en faire un critère de qualité au même titre que la sécurité ou l’ergonomie.</li><li>Valoriser les résultats dans la communication interne et externe du service.</li></ul></li></ul><br/><p>En résumé, adopter le RGESN, c’est inscrire durablement le service dans une logique de sobriété, d’efficacité et de responsabilité numérique, tout en offrant une expérience utilisateur plus fluide et inclusive.</p>"
+        }
+      ]
+    }
+  ]
+}
