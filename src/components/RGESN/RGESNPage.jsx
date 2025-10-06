@@ -11,12 +11,12 @@ const RGESNPage = () => {
         <div>
             <Navbar/>
             <div className="max-w-7xl mx-auto px-4 py-8 text-center ">
-                <h1>Application du RGESN</h1>
+                <h1>🛠️ Application du RGESN</h1>
                 <h2>Audit et amélioration d’un service numérique</h2>
 
                 <div className="mt-4 py-5 px-5 rounded-lg border border-green-200 inline-block">
                     <h2>Sommaire</h2>
-                    <p>Cette page est séparée en 6 parties:</p>
+                    <p>Cette page est séparée en 5 parties:</p>
                     <ul>
                         <li><a href={"#introduction"}>Introduction</a></li>
                         <li><a href={"#audit"}>Audit selon le RGESN</a></li>
