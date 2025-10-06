@@ -1,10 +1,9 @@
 import Navbar from "../shared/Navbar.jsx";
-import Introduction from "./Introduction.jsx";
 import ButtonTopPage from "../shared/ButtonTopPage.jsx";
-import Audit from "./Audit.jsx";
-import Analyse from "./Analyse.jsx";
-import ActionPlan from "./ActionPlan.jsx";
-import Conclusion from "./Conclusion.jsx";
+
+import data from "../../data/rgesn/rgesn.json"
+import TextReader from "../shared/TextReader.jsx";
+import Table from "../shared/Table.jsx";
 
 const RGESNPage = () => {
     return (
@@ -29,23 +28,23 @@ const RGESNPage = () => {
                 <div className="mt-8">
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"introduction"}>Introduction</h2>
-                        <Introduction />
+                        <TextReader jsonObject={data.introduction} />
                     </div>
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"audit"}>Audit selon le RGESN</h2>
-                        <Audit />
+                        <Table document={data.audit}/>
                     </div>
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"analyse"}>Analyse et recommendations</h2>
-                        <Analyse />
+                        <TextReader jsonObject={data.analyse} />
                     </div>
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"action"}>Plan d'action priorisé</h2>
-                        <ActionPlan />
+                        <TextReader jsonObject={data.action} />
                     </div>
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"conclusion"}>Synthèse et argumentaire</h2>
-                        <Conclusion />
+                        <TextReader jsonObject={data.conclusion} />
                     </div>
                 </div>
             </div>
