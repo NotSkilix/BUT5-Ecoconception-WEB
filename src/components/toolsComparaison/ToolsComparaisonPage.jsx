@@ -29,13 +29,23 @@ const ToolsComparaisonPage = () => {
                     Découvrez les caractéristiques et performances des principaux outils pour vous aider à faire le meilleur choix.
                 </p>
 
+                <div className="mt-4 py-5 px-5 rounded-lg border border-green-200 inline-block">
+                    <h2>Sommaire</h2>
+                    <p>Cette page est séparée en 6 étapes que vous pouvez trouver juste ici suivant votre besoin:</p>
+                    <ul>
+                        <li><a href={"#table"}>Tableau de comparaison</a></li>
+                        <li><a href={"#radar"}>Visualisation Radar</a></li>
+                        <li><a href={"#conclusion"}>Synthèse écrite</a></li>
+                    </ul>
+                </div>
+
                 {Object.keys(tools).length === 0 ? (
                     <p className="text-center text-gray-500 text-lg">Chargement des données...</p>
                 ) : (
                     <div className="space-y-12">
                         {/* Table section */}
-                        <div>
-                            <h2 className="text-2xl font-semibold text-green-800 mb-4">
+                        <div className={"mt-10"}>
+                            <h2 id={"table"} className="text-2xl font-semibold text-green-800 mb-4">
                                 📊 Tableau de comparaison
                             </h2>
                             <p className="text-gray-600 mb-4">
@@ -59,7 +69,7 @@ const ToolsComparaisonPage = () => {
 
                         {/* Radar chart section */}
                         <div>
-                            <h2 className="text-2xl font-semibold text-green-800 mb-4">
+                            <h2 id={"radar"} className="text-2xl font-semibold text-green-800 mb-4">
                                 📈 Visualisation Radar
                             </h2>
                             <p className="text-gray-600 mb-4">
@@ -78,7 +88,7 @@ const ToolsComparaisonPage = () => {
                             </div>
                         </div>
                         <div>
-                            <h2>
+                            <h2 id={"conclusion"}>
                                 📝 Synthèse écrite
                             </h2>
                             <div className="bg-white p-6 rounded-xl shadow-lg border border-green-200">
