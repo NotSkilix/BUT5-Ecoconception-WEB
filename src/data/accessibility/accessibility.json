@@ -1,3 +1,25 @@
 {
-
+  "introduction": [
+    {
+      "title": "<a href='https://wave.webaim.org/' target='_blank'>Découverte de WAVE</a>",
+      "data": [
+        {
+          "title": "Présentation de l’outil",
+          "content": "WAVE (Web Accessibility Evaluation Tool) est un outil développé par <a href='https://webaim.org/' target='_blank'>WebAIM</a> permettant d’évaluer automatiquement l’accessibilité d’une page web. Il aide les concepteurs, développeurs et responsables de contenus à identifier les problèmes de conformité avec les standards WCAG (Web Content Accessibility Guidelines)."
+        },
+        {
+          "title": "Fonctionnement",
+          "content": "L’outil s’utilise directement en ligne via le site officiel ou à travers une extension pour navigateur. Il analyse le code HTML d’une page et affiche des annotations visuelles indiquant les erreurs et alertes liées à l’accessibilité.<br/><br/><ul><li><strong>Icônes rouges :</strong> erreurs d’accessibilité critiques (ex. : absence d’alternative textuelle pour les images, contrastes insuffisants).</li><li><strong>Icônes jaunes :</strong> alertes ou points à vérifier manuellement (ex. : balises d’en-tête mal structurées).</li><li><strong>Icônes vertes :</strong> éléments d’accessibilité correctement implémentés (ex. : présence d’un texte alternatif ou d’un titre de page).</li><li><strong>Icônes bleues :</strong> informations ou éléments informatifs non bloquants (ex. : présence de liens répétitifs, d’éléments ARIA).</li></ul>"
+        },
+        {
+          "title": "Utilisation dans un audit RGESN",
+          "content": "Lors d’un audit RGESN, WAVE est particulièrement utile pour vérifier la conformité des interfaces utilisateurs et du design aux critères d’accessibilité. Il permet d’identifier rapidement les améliorations à apporter pour :<br/><ul><li>Garantir l’accès à tous les publics, y compris les personnes en situation de handicap.</li><li>Améliorer la lisibilité et la navigation sur les supports mobiles et desktop.</li><li>Renforcer la conformité avec les bonnes pratiques de conception inclusive.</li></ul>"
+        },
+        {
+          "title": "Documentation et bonnes pratiques",
+          "content": "La documentation complète est disponible sur <a href='https://wave.webaim.org/help' target='_blank'>https://wave.webaim.org/help</a>. Elle décrit en détail chaque icône, son interprétation et les actions correctrices recommandées. Il est conseillé de :<ul><li>Lire attentivement la légende des icônes avant d’interpréter les résultats.</li><li>Combiner WAVE avec d’autres outils (Lighthouse, Axe DevTools, Tanaguru) pour une analyse complète.</li><li>Documenter les erreurs récurrentes dans le rapport d’audit pour planifier les corrections.</li></ul>"
+        }
+      ]
+    }
+  ]
 }
