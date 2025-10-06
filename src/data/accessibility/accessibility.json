@@ -92,5 +92,29 @@
         }
       ]
     }
+  ],
+  "conclusion":
+  [
+    {
+      "title": "Synthèse de l’audit WAVE – <a href='https://www.mairie-braud.fr' target='_blank'>mairie-braud.fr</a>",
+      "data": [
+        {
+          "title": "Problèmes majeurs identifiés",
+          "content": "L’audit d’accessibilité réalisé avec <a href='https://wave.webaim.org/' target='_blank'>WAVE</a> met en évidence plusieurs points critiques affectant la conformité du site. <br/><ul><li><strong>Absence de texte alternatif sur plusieurs images :</strong> Les lecteurs d’écran ne peuvent pas interpréter correctement les visuels informatifs.</li><li><strong>Contraste insuffisant entre le texte et le fond :</strong> Certains éléments textuels sont difficiles à lire pour les utilisateurs malvoyants.</li><li><strong>Structure de titres désorganisée :</strong> Les balises <code>Hn</code> ne respectent pas l’ordre hiérarchique, rendant la navigation complexe pour les technologies d’assistance.</li><li><strong>Absence de labels sur certains champs de formulaire :</strong> Les utilisateurs de lecteurs d’écran ne peuvent pas identifier la fonction de certains champs interactifs.</li></ul>"
+        },
+        {
+          "title": "Corrections prioritaires",
+          "content": "Les actions correctrices à mettre en œuvre en priorité sont les suivantes : <br/><ul><li><strong>Ajouter des attributs <code>alt</code> pertinents</strong> pour toutes les images informatives afin d’améliorer la compréhension du contenu visuel.</li><li><strong>Corriger les contrastes couleur</strong> pour atteindre un ratio minimal de 4.5:1 selon les WCAG 2.1.</li><li><strong>Réorganiser la structure des titres</strong> (<code>h1 → h2 → h3</code>) pour assurer une lecture cohérente et logique.</li><li><strong>Associer des labels explicites</strong> aux champs de formulaire pour renforcer l’accessibilité des interactions.</li></ul><p>Ces corrections constituent la base d’une amélioration rapide et mesurable de l’accessibilité du site, en conformité avec le RGAA et les critères du RGESN.</p>"
+        },
+        {
+          "title": "Limites de l’outil WAVE",
+          "content": "Bien que <a href='https://wave.webaim.org/' target='_blank'>WAVE</a> soit un excellent outil d’analyse automatisée, il présente plusieurs limites qu’il convient de prendre en compte : <br/><ul><li><strong>Analyse partielle :</strong> L’outil ne détecte que les erreurs techniques visibles dans le code, mais pas les problèmes de compréhension ou de navigation logique.</li><li><strong>Absence de contextualisation :</strong> Certaines alertes nécessitent une interprétation humaine pour juger de leur pertinence réelle.</li><li><strong>Pas de test dynamique :</strong> WAVE n’analyse pas les éléments interactifs ou les contenus chargés dynamiquement (menus déroulants, carrousels, formulaires complexes).</li><li><strong>Complémentarité nécessaire :</strong> Il doit être utilisé conjointement avec des tests manuels, des retours utilisateurs et d’autres outils (comme Axe, Lighthouse ou Tanaguru).</li></ul><p>En somme, WAVE constitue une première étape efficace pour repérer les erreurs majeures, mais un audit complet doit toujours inclure une évaluation manuelle pour garantir une accessibilité réellement inclusive.</p>"
+        },
+        {
+          "title": "Conclusion générale",
+          "content": "L’audit WAVE du site <a href='https://www.mairie-braud.fr' target='_blank'>mairie-braud.fr</a> révèle une accessibilité partielle, avec plusieurs points d’amélioration faciles à corriger. En priorisant les images, les contrastes et la structure des titres, le site pourrait considérablement améliorer son accessibilité et se rapprocher des exigences du RGAA et du RGESN. L’utilisation de WAVE, bien qu’imparfaite, constitue une excellente base pour initier une démarche continue d’amélioration de l’expérience utilisateur pour tous."
+        }
+      ]
+    }
   ]
 }

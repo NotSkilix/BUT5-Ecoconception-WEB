@@ -19,6 +19,7 @@ const AccessibilityPage = () => {
                         <li><a href={"#introduction"}>Introduction</a></li>
                         <li><a href={"#audit"}>Audit avec Wave</a></li>
                         <li><a href={"#analyse"}>Analyse et correction</a></li>
+                        <li><a href={"#conclusion"}>Synthèse</a></li>
                     </ul>
                 </div>
 
@@ -34,6 +35,10 @@ const AccessibilityPage = () => {
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"analyse"}>Analyse et correction</h2>
                         <TextReader jsonObject={data.analyse} />
+                    </div>
+                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
+                        <h2 id={"conclusion"}>Synthèse</h2>
+                        <TextReader jsonObject={data.conclusion} />
                     </div>
                 </div>
             </div>
