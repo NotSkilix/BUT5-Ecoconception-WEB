@@ -152,5 +152,23 @@
         }
       ]
     }
+  ],
+  "conclusion": [
+    {
+      "data": [
+        {
+          "title": "Fiche mémo – Les étapes clés d’un audit RGESN",
+          "content": "L’audit RGESN se déroule en plusieurs étapes successives et complémentaires, permettant d’évaluer la conformité d’un service numérique aux bonnes pratiques environnementales. <br/><br/><ul><li><strong>1. Préparation :</strong> Identifier le périmètre du service à auditer (site, application, module) et les objectifs de l’audit.</li><li><strong>2. Sélection des critères :</strong> Choisir les critères RGESN pertinents selon la nature du service (poids des pages, accessibilité, hébergement, etc.).</li><li><strong>3. Collecte des données :</strong> Utiliser des outils d’analyse (Website Carbon, PageSpeed Insights, EcoIndex, GreenIT Analysis) pour mesurer les indicateurs clés.</li><li><strong>4. Évaluation :</strong> Comparer les résultats obtenus avec les bonnes pratiques RGESN pour déterminer le niveau de conformité.</li><li><strong>5. Recommandations :</strong> Identifier les points d’amélioration et proposer des actions concrètes avec priorisation.</li><li><strong>6. Suivi et amélioration continue :</strong> Mettre en œuvre les actions correctrices, suivre leur impact et intégrer la démarche dans les processus de développement.</li></ul>",
+          "images": [
+            "rgesn/audit_schema_simple.png",
+            "rgesn/audit_cycle_amelioration.png"
+          ]
+        },
+        {
+          "title": "Note de synthèse à destination de la direction",
+          "content": "<p>Se conformer au <a href='https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/' target='_blank'>Référentiel Général d’Écoconception des Services Numériques (RGESN)</a> représente aujourd’hui un levier stratégique pour tout service public ou privé. Au-delà d’une exigence réglementaire, il s’agit d’un engagement fort en faveur de la durabilité, de l’efficience et de l’innovation responsable.</p><br/><ul><li><strong>1. Pourquoi se conformer au RGESN ?</strong><ul><li>Assurer la cohérence entre la stratégie numérique et les objectifs de transition écologique.</li><li>Garantir la qualité, la performance et l’accessibilité des services proposés aux usagers.</li></ul></li><li><strong>2. Bénéfices attendus :</strong><ul><li><strong>Environnementaux :</strong> Réduction des émissions de CO₂ liées à l’hébergement et à l’usage.</li><li><strong>Économiques :</strong> Optimisation des ressources serveurs, réduction des coûts d’infrastructure et de maintenance.</li><li><strong>Image et communication :</strong> Valorisation de l’engagement institutionnel, amélioration de la perception du service par le public et conformité aux politiques publiques (loi REEN, stratégie numérique responsable).</li></ul></li><li><strong>3. Comment convaincre les parties prenantes :</strong><ul><li>Sensibiliser à l’impact environnemental du numérique à travers des exemples concrets.</li><li>Mettre en avant les gains mesurables (performance, coûts, satisfaction utilisateur).</li><li>Intégrer l’écoconception dès la phase de conception pour en faire un critère de qualité au même titre que la sécurité ou l’ergonomie.</li><li>Valoriser les résultats dans la communication interne et externe du service.</li></ul></li></ul><br/><p>En résumé, adopter le RGESN, c’est inscrire durablement le service dans une logique de sobriété, d’efficacité et de responsabilité numérique, tout en offrant une expérience utilisateur plus fluide et inclusive.</p>"
+        }
+      ]
+    }
   ]
 }
