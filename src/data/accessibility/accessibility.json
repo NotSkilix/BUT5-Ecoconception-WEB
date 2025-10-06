@@ -21,5 +21,76 @@
         }
       ]
     }
+  ],
+  "audit": {
+    "title": "Audit WAVE : <a href='https://www.mairie-braud.fr' target='_blank'>La Mairie de Braud et Saint Louis</a>",
+    "fields": [
+      {
+        "field_name": "type",
+        "display_name": "Type (Erreur / Alerte / À vérifier)"
+      },
+      {
+        "field_name": "element",
+        "display_name": "Élément concerné"
+      },
+      {
+        "field_name": "localisation",
+        "display_name": "Localisation (URL ou capture)"
+      },
+      {
+        "field_name": "impact",
+        "display_name": "Impact pour l’utilisateur"
+      },
+      {
+        "field_name": "solution",
+        "display_name": "Solution proposée"
+      }
+    ],
+    "data": [
+      {
+        "type": "Erreur",
+        "element": "Image sans texte alternatif",
+        "localisation": "https://www.mairie-braud.fr/ — image de bannière (header principal)",
+        "impact": "Les utilisateurs de lecteurs d’écran ne perçoivent pas le contenu visuel principal, rendant la compréhension du site partielle.",
+        "solution": "Ajouter un attribut alt descriptif à chaque image, par exemple alt='Façade de la mairie de Braud et Saint-Louis'."
+      },
+      {
+        "type": "Alerte",
+        "element": "Contraste insuffisant du texte sur certaines zones",
+        "localisation": "Page d’accueil — titres blancs sur fond clair dans la section d’introduction",
+        "impact": "Les textes sont difficiles à lire pour les utilisateurs souffrant de déficiences visuelles ou en environnement lumineux.",
+        "solution": "Augmenter le contraste couleur selon les critères WCAG AA (rapport minimum 4.5:1 entre le texte et l’arrière-plan)."
+      },
+      {
+        "type": "À vérifier",
+        "element": "Structure des titres mal hiérarchisée",
+        "localisation": "Plusieurs sous-pages — utilisation de balises h3 sans h2 parent",
+        "impact": "La navigation par titres via les technologies d’assistance devient confuse et nuit à la compréhension du contenu.",
+        "solution": "Revoir la hiérarchie des titres pour suivre un ordre logique (un seul h1 par page, puis h2, h3, etc.)."
+      }
+    ]
+  },
+  "analyse": [
+    {
+      "title": "Analyse et corrections – Accessibilité du site <a href='https://www.mairie-braud.fr' target='_blank'>mairie-braud.fr</a>",
+      "data": [
+        {
+          "title": "1. Image sans texte alternatif",
+          "content": "Cette erreur critique concerne plusieurs images décoratives ou informatives du site, notamment la bannière principale et les visuels de présentation. <br/><br/><ul><li><strong>Problème :</strong> Les images ne comportent pas d’attribut <code>alt</code>, empêchant les lecteurs d’écran de décrire le contenu visuel.</li><li><strong>Correction proposée :</strong> Ajouter un attribut <code>alt</code> pertinent à chaque image. Exemple : <code>&lt;img src='mairie.jpg' alt='Façade de la mairie de Braud et Saint-Louis'&gt;</code>.</li><li><strong>Impact positif :</strong> Les utilisateurs malvoyants ou aveugles peuvent comprendre la signification du visuel, rendant le site plus informatif et inclusif.</li></ul>"
+        },
+        {
+          "title": "2. Contraste insuffisant entre le texte et le fond",
+          "content": "Certains éléments de texte (titres et boutons) affichent un contraste trop faible par rapport à leur arrière-plan. <br/><br/><ul><li><strong>Problème :</strong> Le contraste couleur ne respecte pas le ratio minimal de 4.5:1 recommandé par les WCAG 2.1.</li><li><strong>Correction proposée :</strong> Ajuster les couleurs de fond ou de texte (par exemple, remplacer un texte gris clair sur fond blanc par du noir ou du bleu foncé).</li><li><strong>Impact positif :</strong> Une meilleure lisibilité pour tous les utilisateurs, y compris ceux souffrant de déficience visuelle, et une amélioration globale de la clarté visuelle du site.</li></ul>"
+        },
+        {
+          "title": "3. Hiérarchie incorrecte des titres (structure Hn)",
+          "content": "Les balises de titres ne suivent pas toujours un ordre logique (par exemple, un <code>h3</code> directement après un <code>h1</code> sans <code>h2</code>). <br/><br/><ul><li><strong>Problème :</strong> Cela perturbe la navigation des lecteurs d’écran et la compréhension de la structure du contenu.</li><li><strong>Correction proposée :</strong> Réorganiser la hiérarchie des titres afin qu’elle reflète la structure du contenu (h1 → h2 → h3, etc.).</li><li><strong>Impact positif :</strong> Les utilisateurs de technologies d’assistance peuvent naviguer plus facilement entre les sections, ce qui améliore la compréhension du site et la rapidité d’accès à l’information.</li></ul>"
+        },
+        {
+          "title": "Synthèse des bénéfices pour l'expérience utilisateur",
+          "content": "La mise en conformité avec ces trois points d’accessibilité offre des améliorations concrètes : <br/><ul><li>Meilleure compréhension du contenu visuel pour les utilisateurs de lecteurs d’écran.</li><li>Lisibilité renforcée pour les utilisateurs ayant une basse vision ou naviguant sur mobile.</li><li>Navigation structurée et fluide pour tous, notamment via la hiérarchie logique des titres.</li><li>Globalement, une expérience plus inclusive et une meilleure conformité avec le RGAA et les principes du <a href='https://wave.webaim.org/' target='_blank'>WAVE Accessibility Tool</a>.</li></ul>"
+        }
+      ]
+    }
   ]
 }
