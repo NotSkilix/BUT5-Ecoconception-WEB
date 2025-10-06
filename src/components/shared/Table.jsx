@@ -5,6 +5,7 @@ const Table = ({document}) => {
 
     return (
         <div>
+            <h3 dangerouslySetInnerHTML={{__html: document.title}}></h3>
             <table className={"w-full rounded-xl overflow-hidden shadow-lg border border-green-200"}>
                 <thead className={"bg-gradient-to-r from-green-800 to-green-700 text-white"}>
                 <tr>

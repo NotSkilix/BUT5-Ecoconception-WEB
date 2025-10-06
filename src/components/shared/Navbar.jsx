@@ -30,6 +30,9 @@ const Navbar = () => {
                     <Link to={BASE_URL+"rgesn"} className={getStyle("/rgesn")}>
                         RGESN
                     </Link>
+                    <Link to={BASE_URL+"accessibilite"} className={getStyle("/accessibilite")}>
+                        Accessibilité
+                    </Link>
                 </div>
             </nav>
         </div>
