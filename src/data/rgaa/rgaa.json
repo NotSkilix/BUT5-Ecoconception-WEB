@@ -53,5 +53,67 @@
         }
       ]
     }
-  ]
+  ],
+  "audit": {
+    "title": "Audit RGAA : <a href='https://www.mairie-braud.fr' target='_blank'>La Mairie de Braud et Saint Louis</a>",
+    "fields": [
+      {
+        "field_name": "theme",
+        "display_name": "Thème RGAA"
+      },
+      {
+        "field_name": "critere",
+        "display_name": "Critère (ex : 1.1 – Images)"
+      },
+      {
+        "field_name": "conforme",
+        "display_name": "Conforme ?"
+      },
+      {
+        "field_name": "preuves",
+        "display_name": "Preuves/Observations"
+      },
+      {
+        "field_name": "outils",
+        "display_name": "Outils utilisés"
+      }
+    ],
+    "data": [
+      {
+        "theme": "Images",
+        "critere": "1.1 – Chaque image porteuse d'information a-t-elle une alternative textuelle ?",
+        "conforme": "Non conforme",
+        "preuves": "L'image de bannière principale et plusieurs photos de la galerie n'ont pas d'attribut alt. Les logos et icônes utilisent des alt génériques ('image', 'logo') non descriptifs.",
+        "outils": "WAVE, axe DevTools, inspection manuelle du code HTML"
+      },
+      {
+        "theme": "Couleurs",
+        "critere": "3.2 – Le contraste entre la couleur du texte et la couleur de son arrière-plan est-il suffisant ?",
+        "conforme": "Non conforme",
+        "preuves": "Les couleurs d'arrière-plan et de premier plan ne sont pas suffisamment contrastées",
+        "outils": "Lighthouse, Wave"
+      },
+      {
+        "theme": "Navigation",
+        "critere": "12.1 – Chaque ensemble de pages dispose-t-il de deux systèmes de navigation différents ?",
+        "conforme": "Non conforme",
+        "preuves": "Le site dispose qu'une seule barre de navigation ce qui ne répond pas au critères",
+        "outils": "Inspection manuelle"
+      },
+      {
+        "theme": "Formulaires",
+        "critere": "11.1 – Chaque champ de formulaire a-t-il une étiquette ?",
+        "conforme": "Non conforme",
+        "preuves": "Le formulaire de contact utilise des placeholders comme étiquettes sans balise &lt;label&gt; associée. Les champs 'Nom', 'Email' et 'Message' ne sont pas correctement identifiés pour les technologies d'assistance. Le formulaire pour faire une recherche a le même problème.",
+        "outils": "WAVE"
+      },
+      {
+        "theme": "Structuration de l'information",
+        "critere": "9.1 – Dans chaque page web, l'information est-elle structurée par l'utilisation appropriée de titres ?",
+        "conforme": "Non conforme",
+        "preuves": "La page d'accueil contient deux balises &lt;h1&gt;. Certaines sections passent directement de &lt;h2&gt; à &lt;h4&gt; sans &lt;h3&gt;. L'ordre hiérarchique n'est pas respecté sur plusieurs pages.",
+        "outils": "HeadingsMap, WAVE, inspection du code"
+      }
+    ]
+  }
 }

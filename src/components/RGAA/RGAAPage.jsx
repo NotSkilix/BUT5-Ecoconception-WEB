@@ -4,6 +4,7 @@ import TextReader from "../shared/TextReader.jsx";
 import usePageTitle from "../../hooks/usePageTitle.js";
 
 import data from "../../data/rgaa/rgaa.json";
+import Table from "../shared/Table.jsx";
 const RGAAPage = () => {
     usePageTitle("RGAA")
 
@@ -19,6 +20,7 @@ const RGAAPage = () => {
                     <p>Cette page est séparée en 5 parties:</p>
                     <ul>
                         <li><a href={"#introduction"}>Découverte du RGAA</a></li>
+                        <li><a href={"#audit"}>Audit selon le RGAA</a></li>
                     </ul>
                 </div>
 
@@ -26,6 +28,10 @@ const RGAAPage = () => {
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"introduction"}>Découverte du RGAA</h2>
                         <TextReader jsonObject={data.introduction} />
+                    </div>
+                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
+                        <h2 id={"audit"}>Audit selon le RGAA</h2>
+                        <Table document={data.audit} />
                     </div>
                 </div>
             </div>
