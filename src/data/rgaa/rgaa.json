@@ -1,0 +1,57 @@
+{
+  "introduction": [
+    {
+      "title": "Qu'est-ce que le RGAA ?",
+      "data": [
+        {
+          "content": "Le <a href='https://accessibilite.numerique.gouv.fr/' target='_blank'>Référentiel Général d'Amélioration de l'Accessibilité (RGAA)</a> est le standard français pour rendre les sites web et applications accessibles à tous, notamment aux personnes en situation de handicap. Publié par la DINUM et basé sur les recommandations internationales WCAG 2.1, il est obligatoire pour les organismes publics et les grandes entreprises privées."
+        }
+      ]
+    },
+    {
+      "title": "Les 4 principes fondamentaux",
+      "data": [
+        {
+          "content": "Le RGAA s'articule autour de 4 principes clés qui garantissent qu'un service numérique soit :<br/><br/><ul><li><strong>Perceptible :</strong> Les informations doivent pouvoir être perçues par tous (alternatives textuelles, contrastes suffisants, etc.)</li><li><strong>Utilisable :</strong> L'interface doit être navigable au clavier et compatible avec les technologies d'assistance</li><li><strong>Compréhensible :</strong> Le contenu et le fonctionnement doivent être clairs et prévisibles</li><li><strong>Robuste :</strong> Le code doit être compatible avec les différents navigateurs et outils d'assistance</li></ul>"
+        }
+      ]
+    },
+    {
+      "title": "Les 13 thématiques",
+      "data": [
+        {
+          "content": "Le RGAA organise ses 106 critères en 13 thématiques couvrant l'ensemble des aspects de l'accessibilité web : Images, Cadres, Couleurs, Multimédia, Tableaux, Liens, Scripts, Éléments obligatoires, Structuration de l'information, Présentation de l'information, Formulaires, Navigation et Consultation."
+        }
+      ]
+    },
+    {
+      "title": "Sélection de 5 critères pertinents pour un site grand public",
+      "data": [
+        {
+          "title": "1. Alternatives textuelles (Images)",
+          "content": "Toutes les images porteuses d'information doivent avoir un attribut alt descriptif. Les images décoratives doivent avoir un alt vide pour être ignorées par les lecteurs d'écran."
+        },
+        {
+          "title": "2. Contraste des couleurs",
+          "content": "Le rapport de contraste entre le texte et son arrière-plan doit être au minimum de 4.5:1 pour garantir la lisibilité, notamment pour les personnes malvoyantes."
+        },
+        {
+          "title": "3. Navigation au clavier",
+          "content": "Toutes les fonctionnalités doivent être accessibles uniquement au clavier (Tab, Entrée, Échap) sans nécessiter de souris."
+        },
+        {
+          "title": "4. Étiquettes de formulaires",
+          "content": "Chaque champ de formulaire doit avoir une étiquette (label) correctement associée pour que les utilisateurs comprennent ce qui est attendu."
+        },
+        {
+          "title": "5. Hiérarchie des titres",
+          "content": "Les titres (h1, h2, h3...) doivent suivre une structure logique et hiérarchisée pour faciliter la navigation dans le contenu."
+        },
+        {
+          "title": "Pourquoi ces 5 critères ?",
+          "content": "Ces critères représentent les fondamentaux de l'accessibilité web. Ils sont facilement vérifiables, ont un impact direct sur l'expérience utilisateur et couvrent les trois principaux types de handicap (visuel, moteur, cognitif). Leur implémentation constitue une base solide pour la conformité RGAA."
+        }
+      ]
+    }
+  ]
+}
