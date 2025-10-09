@@ -1,9 +1,12 @@
 import Navbar from "../shared/Navbar.jsx";
 import ButtonTopPage from "../shared/ButtonTopPage.jsx";
 import TextReader from "../shared/TextReader.jsx";
-import data from "../../data/rgaa/rgaa.json";
+import usePageTitle from "../../hooks/usePageTitle.js";
 
+import data from "../../data/rgaa/rgaa.json";
 const RGAAPage = () => {
+    usePageTitle("RGAA")
+
     return(
         <div>
             <Navbar />

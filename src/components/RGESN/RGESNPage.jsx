@@ -1,11 +1,14 @@
 import Navbar from "../shared/Navbar.jsx";
 import ButtonTopPage from "../shared/ButtonTopPage.jsx";
-
-import data from "../../data/rgesn/rgesn.json"
 import TextReader from "../shared/TextReader.jsx";
 import Table from "../shared/Table.jsx";
+import usePageTitle from "../../hooks/usePageTitle.js";
+
+import data from "../../data/rgesn/rgesn.json"
 
 const RGESNPage = () => {
+    usePageTitle("RGESN")
+
     return (
         <div>
             <Navbar/>
