@@ -31,7 +31,7 @@ const RGESNPage = () => {
                 <div className="mt-8">
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"introduction"}>Introduction</h2>
-                        <TextReader jsonObject={data.introduction} />
+                        <TextReader document={data.introduction} />
                     </div>
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"audit"}>Audit selon le RGESN</h2>
@@ -39,15 +39,15 @@ const RGESNPage = () => {
                     </div>
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"analyse"}>Analyse et recommendations</h2>
-                        <TextReader jsonObject={data.analyse} />
+                        <TextReader document={data.analyse} />
                     </div>
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"action"}>Plan d'action priorisé</h2>
-                        <TextReader jsonObject={data.action} />
+                        <TextReader document={data.action} />
                     </div>
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"conclusion"}>Synthèse et argumentaire</h2>
-                        <TextReader jsonObject={data.conclusion} />
+                        <TextReader document={data.conclusion} />
                     </div>
                 </div>
             </div>
