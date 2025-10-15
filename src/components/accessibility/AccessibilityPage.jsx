@@ -1,10 +1,13 @@
 import Navbar from "../shared/Navbar.jsx";
 import ButtonTopPage from "../shared/ButtonTopPage.jsx";
 import TextReader from "../shared/TextReader.jsx";
+import Table from "../shared/Table.jsx";
+import usePageTitle from "../../hooks/usePageTitle.js";
 
 import data from "../../data/accessibility/accessibility.json"
-import Table from "../shared/Table.jsx";
 const AccessibilityPage = () => {
+    usePageTitle("Accessibilité")
+
     return (
         <div>
             <Navbar/>

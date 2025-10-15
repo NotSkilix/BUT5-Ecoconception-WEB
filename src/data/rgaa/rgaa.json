@@ -1,0 +1,191 @@
+{
+  "introduction": [
+    {
+      "title": "Qu'est-ce que le RGAA ?",
+      "data": [
+        {
+          "content": "Le <a href='https://accessibilite.numerique.gouv.fr/' target='_blank'>Référentiel Général d'Amélioration de l'Accessibilité (RGAA)</a> est le standard français pour rendre les sites web et applications accessibles à tous, notamment aux personnes en situation de handicap. Publié par la DINUM et basé sur les recommandations internationales WCAG 2.1, il est obligatoire pour les organismes publics et les grandes entreprises privées."
+        }
+      ]
+    },
+    {
+      "title": "Les 4 principes fondamentaux",
+      "data": [
+        {
+          "content": "Le RGAA s'articule autour de 4 principes clés qui garantissent qu'un service numérique soit :<br/><br/><ul><li><strong>Perceptible :</strong> Les informations doivent pouvoir être perçues par tous (alternatives textuelles, contrastes suffisants, etc.)</li><li><strong>Utilisable :</strong> L'interface doit être navigable au clavier et compatible avec les technologies d'assistance</li><li><strong>Compréhensible :</strong> Le contenu et le fonctionnement doivent être clairs et prévisibles</li><li><strong>Robuste :</strong> Le code doit être compatible avec les différents navigateurs et outils d'assistance</li></ul>"
+        }
+      ]
+    },
+    {
+      "title": "Les 13 thématiques",
+      "data": [
+        {
+          "content": "Le RGAA organise ses 106 critères en 13 thématiques couvrant l'ensemble des aspects de l'accessibilité web : Images, Cadres, Couleurs, Multimédia, Tableaux, Liens, Scripts, Éléments obligatoires, Structuration de l'information, Présentation de l'information, Formulaires, Navigation et Consultation."
+        }
+      ]
+    },
+    {
+      "title": "Sélection de 5 critères pertinents pour un site grand public",
+      "data": [
+        {
+          "title": "1. Alternatives textuelles (Images)",
+          "content": "Toutes les images porteuses d'information doivent avoir un attribut alt descriptif. Les images décoratives doivent avoir un alt vide pour être ignorées par les lecteurs d'écran."
+        },
+        {
+          "title": "2. Contraste des couleurs",
+          "content": "Le rapport de contraste entre le texte et son arrière-plan doit être au minimum de 4.5:1 pour garantir la lisibilité, notamment pour les personnes malvoyantes."
+        },
+        {
+          "title": "3. Navigation au clavier",
+          "content": "Toutes les fonctionnalités doivent être accessibles uniquement au clavier (Tab, Entrée, Échap) sans nécessiter de souris."
+        },
+        {
+          "title": "4. Étiquettes de formulaires",
+          "content": "Chaque champ de formulaire doit avoir une étiquette (label) correctement associée pour que les utilisateurs comprennent ce qui est attendu."
+        },
+        {
+          "title": "5. Hiérarchie des titres",
+          "content": "Les titres (h1, h2, h3...) doivent suivre une structure logique et hiérarchisée pour faciliter la navigation dans le contenu."
+        },
+        {
+          "title": "Pourquoi ces 5 critères ?",
+          "content": "Ces critères représentent les fondamentaux de l'accessibilité web. Ils sont facilement vérifiables, ont un impact direct sur l'expérience utilisateur et couvrent les trois principaux types de handicap (visuel, moteur, cognitif). Leur implémentation constitue une base solide pour la conformité RGAA."
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "title": "Audit RGAA : <a href='https://www.mairie-braud.fr' target='_blank'>La Mairie de Braud et Saint Louis</a>",
+    "fields": [
+      {
+        "field_name": "theme",
+        "display_name": "Thème RGAA"
+      },
+      {
+        "field_name": "critere",
+        "display_name": "Critère (ex : 1.1 – Images)"
+      },
+      {
+        "field_name": "conforme",
+        "display_name": "Conforme ?"
+      },
+      {
+        "field_name": "preuves",
+        "display_name": "Preuves/Observations"
+      },
+      {
+        "field_name": "outils",
+        "display_name": "Outils utilisés"
+      }
+    ],
+    "data": [
+      {
+        "theme": "Images",
+        "critere": "1.1 – Chaque image porteuse d'information a-t-elle une alternative textuelle ?",
+        "conforme": "Non conforme",
+        "preuves": "L'image de bannière principale et plusieurs photos de la galerie n'ont pas d'attribut alt. Les logos et icônes utilisent des alt génériques ('image', 'logo') non descriptifs.",
+        "outils": "WAVE, axe DevTools, inspection manuelle du code HTML"
+      },
+      {
+        "theme": "Couleurs",
+        "critere": "3.2 – Le contraste entre la couleur du texte et la couleur de son arrière-plan est-il suffisant ?",
+        "conforme": "Non conforme",
+        "preuves": "Les couleurs d'arrière-plan et de premier plan ne sont pas suffisamment contrastées",
+        "outils": "Lighthouse, Wave"
+      },
+      {
+        "theme": "Navigation",
+        "critere": "12.1 – Chaque ensemble de pages dispose-t-il de deux systèmes de navigation différents ?",
+        "conforme": "Non conforme",
+        "preuves": "Le site dispose qu'une seule barre de navigation ce qui ne répond pas au critères",
+        "outils": "Inspection manuelle"
+      },
+      {
+        "theme": "Formulaires",
+        "critere": "11.1 – Chaque champ de formulaire a-t-il une étiquette ?",
+        "conforme": "Non conforme",
+        "preuves": "Le formulaire de contact utilise des placeholders comme étiquettes sans balise &lt;label&gt; associée. Les champs 'Nom', 'Email' et 'Message' ne sont pas correctement identifiés pour les technologies d'assistance. Le formulaire pour faire une recherche a le même problème.",
+        "outils": "WAVE"
+      },
+      {
+        "theme": "Structuration de l'information",
+        "critere": "9.1 – Dans chaque page web, l'information est-elle structurée par l'utilisation appropriée de titres ?",
+        "conforme": "Non conforme",
+        "preuves": "La page d'accueil contient deux balises &lt;h1&gt;. Certaines sections passent directement de &lt;h2&gt; à &lt;h4&gt; sans &lt;h3&gt;. L'ordre hiérarchique n'est pas respecté sur plusieurs pages.",
+        "outils": "HeadingsMap, WAVE, inspection du code"
+      }
+    ]
+  },
+  "analyse": [
+    {
+      "data": [
+        {
+          "title": "Critère 1 – Alternatives textuelles pour les images",
+          "content": "<ul><li><strong>Solution technique :</strong> Ajouter un attribut alt descriptif pour chaque image porteuse d'information. Pour les images décoratives, utiliser alt=\"\" ou role=\"presentation\". Exemple : &lt;img src=\"mairie.jpg\" alt=\"Façade de la mairie de Braud et Saint-Louis\"&gt;</li><li><strong>Acteurs concernés :</strong> Développeur front-end, rédacteur de contenu, webmaster.</li><li><strong>Exemple de code corrigé :</strong><br/><strong>Avant :</strong> &lt;img src=\"banniere.jpg\"&gt;<br/><strong>Après :</strong> &lt;img src=\"banniere.jpg\" alt=\"Vue aérienne de la commune de Braud et Saint-Louis\"&gt;</li></ul>"
+        },
+        {
+          "title": "Critère 2 – Étiquettes de formulaires",
+          "content": "<ul><li><strong>Solution technique :</strong> Associer chaque champ de formulaire avec une balise &lt;label&gt; correctement liée via l'attribut for. Ne pas utiliser uniquement des placeholders comme étiquettes.</li><li><strong>Acteurs concernés :</strong> Développeur front-end, intégrateur web.</li><li><strong>Exemple de code corrigé :</strong><br/><strong>Avant :</strong> &lt;input type=\"text\" placeholder=\"Nom\"&gt;<br/><strong>Après :</strong> &lt;label for=\"nom\"&gt;Nom :&lt;/label&gt;&lt;input type=\"text\" id=\"nom\" name=\"nom\" placeholder=\"Ex: Dupont\"&gt;</li></ul>"
+        },
+        {
+          "title": "Critère 3 – Hiérarchie des titres",
+          "content": "<ul><li><strong>Solution technique :</strong> Restructurer les titres selon une hiérarchie logique : un seul &lt;h1&gt; par page (titre principal), puis &lt;h2&gt; pour les sections principales, &lt;h3&gt; pour les sous-sections, etc. Ne jamais sauter de niveau.</li><li><strong>Acteurs concernés :</strong> Développeur front-end, rédacteur de contenu, chef de projet.</li><li><strong>Exemple de contenu corrigé :</strong><br/><strong>Avant :</strong><br/>&lt;h1&gt;Accueil&lt;/h1&gt;<br/>&lt;h1&gt;Actualités&lt;/h1&gt;<br/>&lt;h2&gt;Événements&lt;/h2&gt;<br/>&lt;h4&gt;Marché de Noël&lt;/h4&gt;<br/><br/><strong>Après :</strong><br/>&lt;h1&gt;Mairie de Braud et Saint-Louis&lt;/h1&gt;<br/>&lt;h2&gt;Actualités&lt;/h2&gt;<br/>&lt;h3&gt;Événements à venir&lt;/h3&gt;<br/>&lt;h4&gt;Marché de Noël - 15 décembre&lt;/h4&gt;</li></ul>"
+        }
+      ]
+    }
+  ],
+  "action": [
+    {
+      "title": "Plan d'action priorisé",
+      "data": [
+        {
+          "title": "Priorité 1 – Étiquettes de formulaires",
+          "content": "<ul><li><strong>Objectif :</strong> Rendre les formulaires utilisables pour tous, notamment les personnes utilisant des lecteurs d'écran.</li><li><strong>Impact utilisateur :</strong> Très élevé – Les formulaires sont des points de contact critiques (contact, recherche).</li><li><strong>Facilité de mise en œuvre :</strong> Élevée – Correction rapide du code HTML.</li><li><strong>Actions concrètes :</strong> Ajouter des balises &lt;label&gt; correctement associées à chaque champ (attribut for), remplacer les placeholders seuls par de vraies étiquettes.</li><li><strong>Responsables :</strong> Développeur front-end, intégrateur web.</li><li><strong>Échéancier :</strong> 1 à 2 semaines.</li><li><strong>Coût :</strong> Faible (quelques heures de développement).</li></ul>"
+        },
+        {
+          "title": "Priorité 2 – Hiérarchie des titres",
+          "content": "<ul><li><strong>Objectif :</strong> Faciliter la navigation et la compréhension du contenu pour les utilisateurs de technologies d'assistance.</li><li><strong>Impact utilisateur :</strong> Élevé – Structure la lecture du site et améliore l'expérience pour tous.</li><li><strong>Facilité de mise en œuvre :</strong> Moyenne – Nécessite une révision de la structure de plusieurs pages.</li><li><strong>Actions concrètes :</strong> Auditer toutes les pages, corriger la hiérarchie (un seul &lt;h1&gt; par page, pas de saut de niveau), former les rédacteurs.</li><li><strong>Responsables :</strong> Développeur front-end, rédacteur de contenu, webmaster.</li><li><strong>Échéancier :</strong> 3 à 4 semaines.</li><li><strong>Coût :</strong> Modéré (révision de la structure + formation).</li></ul>"
+        },
+        {
+          "title": "Priorité 3 – Alternatives textuelles pour les images",
+          "content": "<ul><li><strong>Objectif :</strong> Permettre aux personnes malvoyantes de percevoir le contenu visuel du site.</li><li><strong>Impact utilisateur :</strong> Élevé – Essentiel pour l'accessibilité des contenus visuels.</li><li><strong>Facilité de mise en œuvre :</strong> Moyenne – Nécessite un audit exhaustif et un travail rédactionnel.</li><li><strong>Actions concrètes :</strong> Inventorier toutes les images, rédiger des alternatives textuelles pertinentes, mettre alt=\"\" sur les images décoratives.</li><li><strong>Responsables :</strong> Rédacteur de contenu, développeur front-end, webmaster.</li><li><strong>Échéancier :</strong> 4 à 6 semaines (selon le nombre d'images).</li><li><strong>Coût :</strong> Modéré à élevé (temps de rédaction important).</li></ul>"
+        }
+      ]
+    },
+    {
+      "title": "Note à destination de la direction",
+      "data": [
+        {
+          "content": "<p><strong>Objet : Mise en conformité du site web avec le RGAA – Obligation légale et enjeu stratégique</strong></p><br/><p>La mise en conformité de notre site internet avec le <a href='https://accessibilite.numerique.gouv.fr/' target='_blank'>Référentiel Général d'Amélioration de l'Accessibilité (RGAA)</a> constitue à la fois une obligation légale et une opportunité d'améliorer notre service aux citoyens.</p><br/><ul><li><strong>1. Obligation légale et risques</strong><ul><li>La loi du 11 février 2005 et la directive européenne 2016/2102 imposent aux organismes publics de garantir l'accessibilité de leurs services numériques.</li><li>Les organismes non conformes s'exposent à des sanctions financières pouvant atteindre 20 000 € par an.</li><li>Une déclaration d'accessibilité doit être publiée sur le site et mise à jour régulièrement.</li></ul></li><li><strong>2. Inclusion sociale et service public</strong><ul><li>En France, 12 millions de personnes sont en situation de handicap, dont beaucoup utilisent des technologies d'assistance pour naviguer sur le web.</li><li>L'accessibilité numérique est un droit fondamental garantissant l'égalité d'accès aux services publics.</li><li>Un site accessible profite également aux seniors, aux personnes en situation de handicap temporaire et à tous les citoyens.</li></ul></li><li><strong>3. Bénéfices concrets attendus</strong><ul><li><strong>Amélioration de l'expérience utilisateur :</strong> Navigation plus fluide, formulaires plus clairs, contenu mieux structuré pour tous.</li><li><strong>Meilleur référencement naturel (SEO) :</strong> Les bonnes pratiques d'accessibilité (titres structurés, alternatives textuelles) améliorent le positionnement sur les moteurs de recherche.</li><li><strong>Image responsable et moderne :</strong> Valorisation de l'engagement de la commune en faveur de l'inclusion et de l'égalité.</li><li><strong>Réduction des demandes d'assistance :</strong> Des formulaires plus clairs et une navigation plus intuitive réduisent les appels et visites en mairie.</li></ul></li><li><strong>4. Échéancier réaliste</strong><ul><li><strong>Phase 1 (Mois 1) :</strong> Correction des formulaires et ajout des étiquettes (priorité critique).</li><li><strong>Phase 2 (Mois 1-2) :</strong> Restructuration de la hiérarchie des titres sur l'ensemble du site.</li><li><strong>Phase 3 (Mois 2) :</strong> Audit et correction des alternatives textuelles pour toutes les images.</li><li><strong>Phase 4 (Mois 2-4) :</strong> Correction des contrastes de couleurs et amélioration de la navigation clavier.</li><li><strong>Publication :</strong> Déclaration d'accessibilité et communication auprès des citoyens.</li></ul></li><li><strong>5. Investissement nécessaire</strong><ul><li><strong>Budget estimé :</strong> Entre 5 000 € et 15 000 € selon l'étendue des corrections (prestataire externe ou temps interne).</li><li><strong>Formation :</strong> Sensibilisation des agents à l'accessibilité numérique (1 à 2 jours).</li><li><strong>Maintenance :</strong> Intégration de l'accessibilité dans les processus de publication de contenu.</li></ul></li></ul><br/><p><strong>Conclusion :</strong> La mise en conformité RGAA n'est pas seulement une obligation légale, c'est un investissement pour un service public plus inclusif, plus efficace et plus moderne. Nous recommandons de lancer le plan d'action dès que possible pour être en conformité d'ici 6 mois.</p>"
+        }
+      ]
+    }
+  ],
+  "conclusion": [
+    {
+      "title": "Comparaison RGAA et WCAG",
+      "data": [
+        {
+          "content": "<p>Le RGAA et les WCAG sont étroitement liés mais présentent quelques différences importantes :</p><br/><table style='width:100%; border-collapse: collapse;'><thead><tr style='background-color: #f0f0f0;'><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>Aspect</th><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>RGAA (Français)</th><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>WCAG (International)</th></tr></thead><tbody><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Origine</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>DINUM (France)</td><td style='border: 1px solid #ddd; padding: 12px;'>W3C / WAI (Mondial)</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Base</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>Basé sur WCAG 2.1</td><td style='border: 1px solid #ddd; padding: 12px;'>Standard international de référence</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Structure</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>106 critères répartis en 13 thématiques</td><td style='border: 1px solid #ddd; padding: 12px;'>78 critères répartis en 4 principes (POUR)</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Niveaux</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>A et AA (niveau AAA optionnel)</td><td style='border: 1px solid #ddd; padding: 12px;'>A, AA et AAA</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Méthodologie</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>Méthodologie de test détaillée et adaptée au contexte français</td><td style='border: 1px solid #ddd; padding: 12px;'>Critères de succès + techniques</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Obligation</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>Obligatoire en France pour le secteur public</td><td style='border: 1px solid #ddd; padding: 12px;'>Référence internationale, base de nombreuses législations</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Langue</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>Français</td><td style='border: 1px solid #ddd; padding: 12px;'>Anglais (traduit en plusieurs langues)</td></tr></tbody></table><br/><p><strong>En résumé :</strong> Le RGAA est une adaptation française des WCAG, avec une méthodologie plus détaillée et des exemples concrets adaptés au contexte français. Respecter le RGAA, c'est respecter les WCAG.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Checklist simplifiée pour les développeurs et rédacteurs",
+      "data": [
+        {
+          "title": "Pour les développeurs",
+          "content": "<ul><li>✅ <strong>Images :</strong> Toutes les images ont un attribut alt pertinent (ou alt=\"\" si décoratives)</li><li>✅ <strong>Formulaires :</strong> Chaque champ a une balise &lt;label&gt; correctement associée (attribut for)</li><li>✅ <strong>Titres :</strong> Hiérarchie logique (un seul h1, puis h2, h3... sans saut de niveau)</li><li>✅ <strong>Contrastes :</strong> Ratio minimum de 4.5:1 entre texte et arrière-plan</li><li>✅ <strong>Clavier :</strong> Toutes les fonctionnalités sont accessibles au clavier (Tab, Entrée, Échap)</li><li>✅ <strong>Focus :</strong> L'indicateur de focus est toujours visible sur les éléments interactifs</li><li>✅ <strong>Liens :</strong> Les intitulés de liens sont explicites (éviter \"cliquez ici\")</li><li>✅ <strong>Structure HTML :</strong> Utilisation sémantique des balises (nav, main, footer, article...)</li><li>✅ <strong>Attributs ARIA :</strong> Utiliser les attributs ARIA uniquement si nécessaire et correctement</li><li>✅ <strong>Médias :</strong> Les vidéos ont des sous-titres, les contenus audio ont une transcription</li></ul>"
+        },
+        {
+          "title": "Pour les rédacteurs",
+          "content": "<ul><li>✅ <strong>Alternatives textuelles :</strong> Rédiger des descriptions pertinentes pour chaque image porteuse d'information</li><li>✅ <strong>Titres :</strong> Utiliser les niveaux de titres correctement (ne pas utiliser les titres pour le style)</li><li>✅ <strong>Liens :</strong> Rédiger des intitulés de liens explicites et compréhensibles hors contexte</li><li>✅ <strong>Langue :</strong> Utiliser un langage clair et simple, éviter le jargon</li><li>✅ <strong>Structure :</strong> Organiser le contenu de manière logique avec des paragraphes courts</li><li>✅ <strong>Listes :</strong> Utiliser les listes à puces ou numérotées pour structurer l'information</li><li>✅ <strong>Tableaux :</strong> Ajouter des en-têtes de colonnes et de lignes clairs</li><li>✅ <strong>Documents :</strong> Les PDF et documents joints doivent également être accessibles</li><li>✅ <strong>Médias :</strong> Fournir des transcriptions pour les contenus audio/vidéo</li><li>✅ <strong>Abréviations :</strong> Expliciter les abréviations et acronymes lors de leur première utilisation</li></ul>"
+        },
+        {
+          "title": "Outils recommandés",
+          "content": "<ul><li>🔧 <strong>WAVE</strong> - Extension navigateur pour détecter les erreurs d'accessibilité</li><li>🔧 <strong>axe DevTools</strong> - Outil d'audit intégré aux outils de développement</li><li>🔧 <strong>Lighthouse</strong> - Audit automatisé dans Chrome DevTools</li><li>🔧 <strong>HeadingsMap</strong> - Vérification de la hiérarchie des titres</li><li>🔧 <strong>Contrast Checker</strong> - Vérification des ratios de contraste</li><li>🔧 <strong>NVDA/JAWS</strong> - Lecteurs d'écran pour tester l'accessibilité réelle</li><li>🔧 <strong>Keyboard Navigation</strong> - Tester la navigation complète au clavier</li></ul>"
+        }
+      ]
+    }
+  ]
+}
