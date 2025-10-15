@@ -1,9 +1,9 @@
 import TextSection from "./TextSection.jsx";
 
-const TextReader = ({jsonObject}) => {
+const TextReader = ({document}) => {
     return(
         <div>
-            {jsonObject.map((selection, selectionKey) => (
+            {document.map((selection, selectionKey) => (
                 <div key={selectionKey}>
                     <TextSection title={selection.title} subtitle={selection.subtitle} />
                     {selection.data.map((value, key) => (

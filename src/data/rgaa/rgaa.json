@@ -115,5 +115,50 @@
         "outils": "HeadingsMap, WAVE, inspection du code"
       }
     ]
-  }
+  },
+  "analyse": [
+    {
+      "data": [
+        {
+          "title": "Critère 1 – Alternatives textuelles pour les images",
+          "content": "<ul><li><strong>Solution technique :</strong> Ajouter un attribut alt descriptif pour chaque image porteuse d'information. Pour les images décoratives, utiliser alt=\"\" ou role=\"presentation\". Exemple : &lt;img src=\"mairie.jpg\" alt=\"Façade de la mairie de Braud et Saint-Louis\"&gt;</li><li><strong>Acteurs concernés :</strong> Développeur front-end, rédacteur de contenu, webmaster.</li><li><strong>Exemple de code corrigé :</strong><br/><strong>Avant :</strong> &lt;img src=\"banniere.jpg\"&gt;<br/><strong>Après :</strong> &lt;img src=\"banniere.jpg\" alt=\"Vue aérienne de la commune de Braud et Saint-Louis\"&gt;</li></ul>"
+        },
+        {
+          "title": "Critère 2 – Étiquettes de formulaires",
+          "content": "<ul><li><strong>Solution technique :</strong> Associer chaque champ de formulaire avec une balise &lt;label&gt; correctement liée via l'attribut for. Ne pas utiliser uniquement des placeholders comme étiquettes.</li><li><strong>Acteurs concernés :</strong> Développeur front-end, intégrateur web.</li><li><strong>Exemple de code corrigé :</strong><br/><strong>Avant :</strong> &lt;input type=\"text\" placeholder=\"Nom\"&gt;<br/><strong>Après :</strong> &lt;label for=\"nom\"&gt;Nom :&lt;/label&gt;&lt;input type=\"text\" id=\"nom\" name=\"nom\" placeholder=\"Ex: Dupont\"&gt;</li></ul>"
+        },
+        {
+          "title": "Critère 3 – Hiérarchie des titres",
+          "content": "<ul><li><strong>Solution technique :</strong> Restructurer les titres selon une hiérarchie logique : un seul &lt;h1&gt; par page (titre principal), puis &lt;h2&gt; pour les sections principales, &lt;h3&gt; pour les sous-sections, etc. Ne jamais sauter de niveau.</li><li><strong>Acteurs concernés :</strong> Développeur front-end, rédacteur de contenu, chef de projet.</li><li><strong>Exemple de contenu corrigé :</strong><br/><strong>Avant :</strong><br/>&lt;h1&gt;Accueil&lt;/h1&gt;<br/>&lt;h1&gt;Actualités&lt;/h1&gt;<br/>&lt;h2&gt;Événements&lt;/h2&gt;<br/>&lt;h4&gt;Marché de Noël&lt;/h4&gt;<br/><br/><strong>Après :</strong><br/>&lt;h1&gt;Mairie de Braud et Saint-Louis&lt;/h1&gt;<br/>&lt;h2&gt;Actualités&lt;/h2&gt;<br/>&lt;h3&gt;Événements à venir&lt;/h3&gt;<br/>&lt;h4&gt;Marché de Noël - 15 décembre&lt;/h4&gt;</li></ul>"
+        }
+      ]
+    }
+  ],
+  "action": [
+    {
+      "title": "Plan d'action priorisé",
+      "data": [
+        {
+          "title": "Priorité 1 – Étiquettes de formulaires",
+          "content": "<ul><li><strong>Objectif :</strong> Rendre les formulaires utilisables pour tous, notamment les personnes utilisant des lecteurs d'écran.</li><li><strong>Impact utilisateur :</strong> Très élevé – Les formulaires sont des points de contact critiques (contact, recherche).</li><li><strong>Facilité de mise en œuvre :</strong> Élevée – Correction rapide du code HTML.</li><li><strong>Actions concrètes :</strong> Ajouter des balises &lt;label&gt; correctement associées à chaque champ (attribut for), remplacer les placeholders seuls par de vraies étiquettes.</li><li><strong>Responsables :</strong> Développeur front-end, intégrateur web.</li><li><strong>Échéancier :</strong> 1 à 2 semaines.</li><li><strong>Coût :</strong> Faible (quelques heures de développement).</li></ul>"
+        },
+        {
+          "title": "Priorité 2 – Hiérarchie des titres",
+          "content": "<ul><li><strong>Objectif :</strong> Faciliter la navigation et la compréhension du contenu pour les utilisateurs de technologies d'assistance.</li><li><strong>Impact utilisateur :</strong> Élevé – Structure la lecture du site et améliore l'expérience pour tous.</li><li><strong>Facilité de mise en œuvre :</strong> Moyenne – Nécessite une révision de la structure de plusieurs pages.</li><li><strong>Actions concrètes :</strong> Auditer toutes les pages, corriger la hiérarchie (un seul &lt;h1&gt; par page, pas de saut de niveau), former les rédacteurs.</li><li><strong>Responsables :</strong> Développeur front-end, rédacteur de contenu, webmaster.</li><li><strong>Échéancier :</strong> 3 à 4 semaines.</li><li><strong>Coût :</strong> Modéré (révision de la structure + formation).</li></ul>"
+        },
+        {
+          "title": "Priorité 3 – Alternatives textuelles pour les images",
+          "content": "<ul><li><strong>Objectif :</strong> Permettre aux personnes malvoyantes de percevoir le contenu visuel du site.</li><li><strong>Impact utilisateur :</strong> Élevé – Essentiel pour l'accessibilité des contenus visuels.</li><li><strong>Facilité de mise en œuvre :</strong> Moyenne – Nécessite un audit exhaustif et un travail rédactionnel.</li><li><strong>Actions concrètes :</strong> Inventorier toutes les images, rédiger des alternatives textuelles pertinentes, mettre alt=\"\" sur les images décoratives.</li><li><strong>Responsables :</strong> Rédacteur de contenu, développeur front-end, webmaster.</li><li><strong>Échéancier :</strong> 4 à 6 semaines (selon le nombre d'images).</li><li><strong>Coût :</strong> Modéré à élevé (temps de rédaction important).</li></ul>"
+        }
+      ]
+    },
+    {
+      "title": "Note à destination de la direction",
+      "data": [
+        {
+          "content": "<p><strong>Objet : Mise en conformité du site web avec le RGAA – Obligation légale et enjeu stratégique</strong></p><br/><p>La mise en conformité de notre site internet avec le <a href='https://accessibilite.numerique.gouv.fr/' target='_blank'>Référentiel Général d'Amélioration de l'Accessibilité (RGAA)</a> constitue à la fois une obligation légale et une opportunité d'améliorer notre service aux citoyens.</p><br/><ul><li><strong>1. Obligation légale et risques</strong><ul><li>La loi du 11 février 2005 et la directive européenne 2016/2102 imposent aux organismes publics de garantir l'accessibilité de leurs services numériques.</li><li>Les organismes non conformes s'exposent à des sanctions financières pouvant atteindre 20 000 € par an.</li><li>Une déclaration d'accessibilité doit être publiée sur le site et mise à jour régulièrement.</li></ul></li><li><strong>2. Inclusion sociale et service public</strong><ul><li>En France, 12 millions de personnes sont en situation de handicap, dont beaucoup utilisent des technologies d'assistance pour naviguer sur le web.</li><li>L'accessibilité numérique est un droit fondamental garantissant l'égalité d'accès aux services publics.</li><li>Un site accessible profite également aux seniors, aux personnes en situation de handicap temporaire et à tous les citoyens.</li></ul></li><li><strong>3. Bénéfices concrets attendus</strong><ul><li><strong>Amélioration de l'expérience utilisateur :</strong> Navigation plus fluide, formulaires plus clairs, contenu mieux structuré pour tous.</li><li><strong>Meilleur référencement naturel (SEO) :</strong> Les bonnes pratiques d'accessibilité (titres structurés, alternatives textuelles) améliorent le positionnement sur les moteurs de recherche.</li><li><strong>Image responsable et moderne :</strong> Valorisation de l'engagement de la commune en faveur de l'inclusion et de l'égalité.</li><li><strong>Réduction des demandes d'assistance :</strong> Des formulaires plus clairs et une navigation plus intuitive réduisent les appels et visites en mairie.</li></ul></li><li><strong>4. Échéancier réaliste</strong><ul><li><strong>Phase 1 (Mois 1) :</strong> Correction des formulaires et ajout des étiquettes (priorité critique).</li><li><strong>Phase 2 (Mois 1-2) :</strong> Restructuration de la hiérarchie des titres sur l'ensemble du site.</li><li><strong>Phase 3 (Mois 2) :</strong> Audit et correction des alternatives textuelles pour toutes les images.</li><li><strong>Phase 4 (Mois 2-4) :</strong> Correction des contrastes de couleurs et amélioration de la navigation clavier.</li><li><strong>Publication :</strong> Déclaration d'accessibilité et communication auprès des citoyens.</li></ul></li><li><strong>5. Investissement nécessaire</strong><ul><li><strong>Budget estimé :</strong> Entre 5 000 € et 15 000 € selon l'étendue des corrections (prestataire externe ou temps interne).</li><li><strong>Formation :</strong> Sensibilisation des agents à l'accessibilité numérique (1 à 2 jours).</li><li><strong>Maintenance :</strong> Intégration de l'accessibilité dans les processus de publication de contenu.</li></ul></li></ul><br/><p><strong>Conclusion :</strong> La mise en conformité RGAA n'est pas seulement une obligation légale, c'est un investissement pour un service public plus inclusif, plus efficace et plus moderne. Nous recommandons de lancer le plan d'action dès que possible pour être en conformité d'ici 6 mois.</p>"
+        }
+      ]
+    }
+  ]
 }
