@@ -23,6 +23,7 @@ const RGAAPage = () => {
                         <li><a href={"#audit"}>Audit selon le RGAA</a></li>
                         <li><a href={"#analyse"}>Analyse et recommandations</a></li>
                         <li><a href={"#action"}>Plan d’action et argumentaire</a></li>
+                        <li><a href={"#conclusion"}>Que retenir ?</a></li>
                     </ul>
                 </div>
 
@@ -42,6 +43,10 @@ const RGAAPage = () => {
                     <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
                         <h2 id={"action"}>Plan d’action et argumentaire</h2>
                         <TextReader document={data.action} />
+                    </div>
+                    <div className="mb-4 space-y-4 py-8 px-8 bg-white rounded-lg shadow-md border border-green-200">
+                        <h2 id={"conclusion"}>Que retenir ?</h2>
+                        <TextReader document={data.conclusion} />
                     </div>
                 </div>
             </div>

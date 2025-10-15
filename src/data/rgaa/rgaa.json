@@ -160,5 +160,32 @@
         }
       ]
     }
+  ],
+  "conclusion": [
+    {
+      "title": "Comparaison RGAA et WCAG",
+      "data": [
+        {
+          "content": "<p>Le RGAA et les WCAG sont étroitement liés mais présentent quelques différences importantes :</p><br/><table style='width:100%; border-collapse: collapse;'><thead><tr style='background-color: #f0f0f0;'><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>Aspect</th><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>RGAA (Français)</th><th style='border: 1px solid #ddd; padding: 12px; text-align: left;'>WCAG (International)</th></tr></thead><tbody><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Origine</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>DINUM (France)</td><td style='border: 1px solid #ddd; padding: 12px;'>W3C / WAI (Mondial)</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Base</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>Basé sur WCAG 2.1</td><td style='border: 1px solid #ddd; padding: 12px;'>Standard international de référence</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Structure</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>106 critères répartis en 13 thématiques</td><td style='border: 1px solid #ddd; padding: 12px;'>78 critères répartis en 4 principes (POUR)</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Niveaux</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>A et AA (niveau AAA optionnel)</td><td style='border: 1px solid #ddd; padding: 12px;'>A, AA et AAA</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Méthodologie</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>Méthodologie de test détaillée et adaptée au contexte français</td><td style='border: 1px solid #ddd; padding: 12px;'>Critères de succès + techniques</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Obligation</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>Obligatoire en France pour le secteur public</td><td style='border: 1px solid #ddd; padding: 12px;'>Référence internationale, base de nombreuses législations</td></tr><tr><td style='border: 1px solid #ddd; padding: 12px;'><strong>Langue</strong></td><td style='border: 1px solid #ddd; padding: 12px;'>Français</td><td style='border: 1px solid #ddd; padding: 12px;'>Anglais (traduit en plusieurs langues)</td></tr></tbody></table><br/><p><strong>En résumé :</strong> Le RGAA est une adaptation française des WCAG, avec une méthodologie plus détaillée et des exemples concrets adaptés au contexte français. Respecter le RGAA, c'est respecter les WCAG.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Checklist simplifiée pour les développeurs et rédacteurs",
+      "data": [
+        {
+          "title": "Pour les développeurs",
+          "content": "<ul><li>✅ <strong>Images :</strong> Toutes les images ont un attribut alt pertinent (ou alt=\"\" si décoratives)</li><li>✅ <strong>Formulaires :</strong> Chaque champ a une balise &lt;label&gt; correctement associée (attribut for)</li><li>✅ <strong>Titres :</strong> Hiérarchie logique (un seul h1, puis h2, h3... sans saut de niveau)</li><li>✅ <strong>Contrastes :</strong> Ratio minimum de 4.5:1 entre texte et arrière-plan</li><li>✅ <strong>Clavier :</strong> Toutes les fonctionnalités sont accessibles au clavier (Tab, Entrée, Échap)</li><li>✅ <strong>Focus :</strong> L'indicateur de focus est toujours visible sur les éléments interactifs</li><li>✅ <strong>Liens :</strong> Les intitulés de liens sont explicites (éviter \"cliquez ici\")</li><li>✅ <strong>Structure HTML :</strong> Utilisation sémantique des balises (nav, main, footer, article...)</li><li>✅ <strong>Attributs ARIA :</strong> Utiliser les attributs ARIA uniquement si nécessaire et correctement</li><li>✅ <strong>Médias :</strong> Les vidéos ont des sous-titres, les contenus audio ont une transcription</li></ul>"
+        },
+        {
+          "title": "Pour les rédacteurs",
+          "content": "<ul><li>✅ <strong>Alternatives textuelles :</strong> Rédiger des descriptions pertinentes pour chaque image porteuse d'information</li><li>✅ <strong>Titres :</strong> Utiliser les niveaux de titres correctement (ne pas utiliser les titres pour le style)</li><li>✅ <strong>Liens :</strong> Rédiger des intitulés de liens explicites et compréhensibles hors contexte</li><li>✅ <strong>Langue :</strong> Utiliser un langage clair et simple, éviter le jargon</li><li>✅ <strong>Structure :</strong> Organiser le contenu de manière logique avec des paragraphes courts</li><li>✅ <strong>Listes :</strong> Utiliser les listes à puces ou numérotées pour structurer l'information</li><li>✅ <strong>Tableaux :</strong> Ajouter des en-têtes de colonnes et de lignes clairs</li><li>✅ <strong>Documents :</strong> Les PDF et documents joints doivent également être accessibles</li><li>✅ <strong>Médias :</strong> Fournir des transcriptions pour les contenus audio/vidéo</li><li>✅ <strong>Abréviations :</strong> Expliciter les abréviations et acronymes lors de leur première utilisation</li></ul>"
+        },
+        {
+          "title": "Outils recommandés",
+          "content": "<ul><li>🔧 <strong>WAVE</strong> - Extension navigateur pour détecter les erreurs d'accessibilité</li><li>🔧 <strong>axe DevTools</strong> - Outil d'audit intégré aux outils de développement</li><li>🔧 <strong>Lighthouse</strong> - Audit automatisé dans Chrome DevTools</li><li>🔧 <strong>HeadingsMap</strong> - Vérification de la hiérarchie des titres</li><li>🔧 <strong>Contrast Checker</strong> - Vérification des ratios de contraste</li><li>🔧 <strong>NVDA/JAWS</strong> - Lecteurs d'écran pour tester l'accessibilité réelle</li><li>🔧 <strong>Keyboard Navigation</strong> - Tester la navigation complète au clavier</li></ul>"
+        }
+      ]
+    }
   ]
 }
