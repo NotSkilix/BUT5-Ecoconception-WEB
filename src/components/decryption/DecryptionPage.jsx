@@ -23,8 +23,7 @@ const DecryptionPage = () => {
                         duration: 1.5,
                         ease: "easeInOut"
                     }}
-                    viewport={{ once: true, margin: "-100px" }}
-                >
+                    viewport={{ once: true, margin: "-100px" }}>
                     <h1>🔍 Décryptage technique et pédagogique de Website Carbon Calculator </h1>
                     <div className="mt-4 py-5 px-5 rounded-lg border border-green-200 inline-block">
                         <h2>Sommaire</h2>
