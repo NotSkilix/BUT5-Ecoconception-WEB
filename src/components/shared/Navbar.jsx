@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import {motion} from "framer-motion";
 
 const Navbar = () => {
     const CURRENT_PATH = useLocation().pathname
@@ -15,7 +16,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="bg-green-800 p-4 flex justify-center space-x-8">
+            <nav className="bg-green-800 p-4 flex justify-center space-x-8 shadow-md px-10">
                 <div className="container mx-auto flex justify-between">
                     <Link to={BASE_URL}
                           className={getStyle("/")}>
