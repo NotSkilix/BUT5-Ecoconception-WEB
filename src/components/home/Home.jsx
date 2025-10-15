@@ -4,6 +4,7 @@ import HomeText from "./HomeText.jsx";
 import usePageTitle from "../../hooks/usePageTitle.js";
 import React, {useEffect} from "react";
 import {motion} from "framer-motion";
+import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
 
 const Home = () => {
     const BASE_URL= import.meta.env.BASE_URL;
@@ -30,6 +31,22 @@ const Home = () => {
                 </div>
                 <div>
                     <HomeText texts={text}/>
+                </div>
+                <div className={"mb-4 space-y-6 py-8 px-8 bg-white rounded-lg shadow-md"}>
+                    <h3>Trouver les résultats de cette page</h3>
+                    <p>Voici les résultats de ce site qui fait office de compte rendu, réalisé de manière éco-responsable.</p>
+                    <ul>
+                        <li><a href="https://www.websitecarbon.com/website/notskilix-github-io-but5-ecoconception-web/">Website Carbone Calculator</a></li>
+                        <li><a href="https://www.ecoindex.fr/resultat/?id=6699db85-4507-4cae-9883-b034bd60256e">EcoIndex</a></li>
+                    </ul>
+
+                    <h4>Badge</h4>
+                    <p>Et nous avons même un badge pour notre site!</p>
+                    <WebsiteCarbonBadge
+                        lang="fr"
+                        co2="0.01"
+                        percentage="99"/>
+                    <p>Malheuresement <a href={"https://www.ecoindex.fr"} target={"_blank"}>EcoIndex</a> ne propose pas de badge pour les sites en React.</p>
                 </div>
             </motion.div>
         </div>
